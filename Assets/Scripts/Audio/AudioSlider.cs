@@ -26,20 +26,23 @@ public class AudioSlider : MonoBehaviour
     }
     private void Start()
     {
-
+        slider.minValue = 0.0001f;
         var recordedValue = PlayerPrefs.GetFloat(ExposedParameterName, 1);
         Mixer.SetFloat(ExposedParameterName, Mathf.Log10(recordedValue) * 20);
+
     }
     private void OnEnable()
     {
         var recordedValue = PlayerPrefs.GetFloat(ExposedParameterName, 1);
         Mixer.SetFloat(ExposedParameterName, Mathf.Log10(recordedValue) * 20);
         slider.value = recordedValue;
+        slider.onValueChanged.AddListener(OnChangeSlider);
     }
     private void OnDisable()
     {
         PlayerPrefs.SetFloat(ExposedParameterName, slider.value);
         PlayerPrefs.Save();
+        slider.onValueChanged.RemoveListener(OnChangeSlider);
     }
 
     public void OnChangeSlider(float Value)
@@ -49,6 +52,7 @@ public class AudioSlider : MonoBehaviour
         {
 
             case AudioMixMode.LinearMixerVolume:
+            Debug.LogError("Linear No Longer supported");
             Mixer.SetFloat(ExposedParameterName, (-80 + Value * 80));
             break;
             case AudioMixMode.LogrithmicMixerVolume:
