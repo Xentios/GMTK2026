@@ -3,6 +3,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
+    private KeyBinder keyBinder;
+
+    [SerializeField]
     private float moveForce = 10f;
 
     [SerializeField]
@@ -17,12 +20,13 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
+        keyBinder = GetComponent<KeyBinder>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -30,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerMoveKeyboard();
 
-        if (Input.GetButtonDown("Jump"))
+        if (keyBinder.IsJumping())  //Input.GetButtonDown("Jump"))
         {
             jumpPressed = true;
         }
@@ -49,10 +53,10 @@ public class PlayerMovement : MonoBehaviour
     }
     void PlayerMoveKeyboard()
     {
-        movementX = Input.GetAxisRaw("Horizontal");
+        movementX = keyBinder.GetMovement().x;
         transform.position += new Vector3(movementX, 0f, 0f) * moveForce * Time.deltaTime;
     }
-    void PlayerJump() 
+    void PlayerJump()
     {
         if (jumpPressed && isGrounded)
         {
