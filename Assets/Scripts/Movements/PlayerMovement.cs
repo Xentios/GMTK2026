@@ -43,6 +43,14 @@ public class PlayerMovement : MonoBehaviour
             jumpPressed = true;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag(GROUND_TAG))
+        {
+            isGrounded = true;
+        }
+    }
     void PlayerMoveKeyboard()
     {
         movementX = Input.GetAxisRaw("Horizontal");
