@@ -11,11 +11,6 @@ public class PlayerMovement : MonoBehaviour
     private float movementX;
     private Rigidbody2D myBody;
 
-    private SpriteRenderer sr;
-
-    private Animator anim;
-    private string WALK_ANIMATION = "Walk";
-
     private bool isGrounded = true;
     private bool jumpPressed = false;
     private string GROUND_TAG = "Ground";
