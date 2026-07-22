@@ -43,6 +43,10 @@ public class PlayerMovement : MonoBehaviour
             jumpPressed = true;
         }
     }
+    private void FixedUpdate()
+    {
+        PlayerJump();
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -55,5 +59,16 @@ public class PlayerMovement : MonoBehaviour
     {
         movementX = Input.GetAxisRaw("Horizontal");
         transform.position += new Vector3(movementX, 0f, 0f) * moveForce * Time.deltaTime;
+    }
+    void PlayerJump() 
+    {
+        if (jumpPressed && isGrounded)
+        {
+            jumpPressed = false;
+            isGrounded = false;
+            myBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+
+        jumpPressed = false;
     }
 }
