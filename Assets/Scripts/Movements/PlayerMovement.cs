@@ -17,9 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-
-        sr = GetComponent<SpriteRenderer>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
