@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -40,16 +39,16 @@ public class InputGE : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.collider != null && (hit.collider.gameObject.CompareTag("Items")) 
-                || hit.collider.gameObject.layer== LayerMask.NameToLayer("Draggable")
-                || hit.collider.gameObject.GetComponent<IDrag>() !=null
+            if (hit.collider != null && (hit.collider.gameObject.CompareTag("Items"))
+                || hit.collider.gameObject.layer == LayerMask.NameToLayer("Draggable")
+                || hit.collider.gameObject.GetComponent<IDrag>() != null
                 )
-            {               
+            {
                 StartCoroutine(DragUpdate(hit.collider.gameObject));
             }
         }
 
-        RaycastHit2D hit2D= Physics2D.GetRayIntersection(ray);
+        RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray);
         if (hit2D.collider != null && (hit2D.collider.gameObject.CompareTag("Items"))
                 || hit2D.collider.gameObject.layer == LayerMask.NameToLayer("Draggable")
                 || hit2D.collider.gameObject.GetComponent<IDrag>() != null
@@ -61,13 +60,14 @@ public class InputGE : MonoBehaviour
 
     private IEnumerator DragUpdate(GameObject clickedObject)
     {
-       clickedObject.TryGetComponent<Rigidbody2D>(out var rb);
+        clickedObject.TryGetComponent<Rigidbody2D>(out var rb);
         clickedObject.TryGetComponent<IDrag>(out var IDragComponent);
-        IDragComponent?.onStartDrag();
+        IDragComponent.onStartDrag();
+        var liste = clickedObject.GetComponents<IDrag>();
 
-       float initialDistance = Vector3.Distance(clickedObject.transform.position, mainCamera.transform.position);
-       while (mouseClick.ReadValue<float>() != 0)
-       {
+        float initialDistance = Vector3.Distance(clickedObject.transform.position, mainCamera.transform.position);
+        while (mouseClick.ReadValue<float>() != 0)
+        {
             Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
             if (rb != null)
             {
@@ -81,8 +81,8 @@ public class InputGE : MonoBehaviour
                     ref velocity, mouseDragSpeed);
                 yield return null;
             }
-       }
-       IDragComponent?.onEndDrag();
+        }
+        IDragComponent.onEndDrag();
     }
 
 

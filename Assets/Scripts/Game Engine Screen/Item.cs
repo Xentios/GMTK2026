@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(SpriteRenderer))]
-public class Item : MonoBehaviour
+public class Item : MonoBehaviour, IDrag
 {
     [Header("Movement")]
     [SerializeField] private float startSpeed = 1f;
@@ -57,7 +57,7 @@ public class Item : MonoBehaviour
 
 
     //Dragging 
-    public void StartDrag()
+    public void onStartDrag()
     {
         isDragging = true;
 
@@ -66,7 +66,7 @@ public class Item : MonoBehaviour
         rb.gravityScale = 1f;
     }
 
-    public void EndDrag()
+    public void onEndDrag()
     {
         isDragging = false;
 
@@ -86,6 +86,8 @@ public class Item : MonoBehaviour
         rb.angularVelocity = 0f;
         rb.gravityScale = 1f;
     }
+
+
 
     /* TEST */
     //private void OnTriggerEnter2D(Collider2D other)
