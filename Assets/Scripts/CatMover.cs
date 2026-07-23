@@ -30,11 +30,13 @@ public class CatMover : MonoBehaviour
 
     public void StartWalking()
     {
+        IsWalking = true;
         skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
     }
 
     public void StartSitDown()
     {
+        IsWalking = false;
         var end = skeletonRendererAnim.AnimationState.SetAnimation(0, Sit, false).AnimationEnd;
         skeletonRendererAnim.AnimationState.AddAnimation(0, Sitting, true, Sitting.Animation.Duration);
     }
