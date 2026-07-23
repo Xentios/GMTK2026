@@ -181,8 +181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   startSpeed: 1
-  acceleration: 0.3
-  maxSpeed: 6
 --- !u!114 &8542085997070608502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +188,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4623121148812014824}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f1381cdc03e8c54fa21a5d5e41e7a3e, type: 3}
   m_Name: 
