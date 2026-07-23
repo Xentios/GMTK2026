@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     {
         CurrentFallSpeed += speedIncrease * Time.deltaTime;
         CurrentFallSpeed = Mathf.Min(CurrentFallSpeed, maxSpeed);
-        Debug.Log("Hız:" + CurrentFallSpeed);
+        DropContainer._speed = CurrentFallSpeed;
+        /* TEST */
+        //Debug.Log("Hız:" + CurrentFallSpeed);
     }
 }

@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using UnityEngine;
 
 [System.Serializable]
@@ -17,17 +18,45 @@ public class DropContainer : MonoBehaviour
     [Header("Items")]
     [SerializeField] private ItemInfo[] items;
 
+    public static float _speed;
+
     private void Start()
     {
-        InvokeRepeating(nameof(SpawnItem), 0f, spawnInterval);
+        SpawnLoop();
+    }
+
+    private async void SpawnLoop()
+    {
+        while (true)
+        {
+            float currentInterval;
+
+            if (_speed<5)
+            currentInterval = spawnInterval / (1f + (_speed * 0.15f));
+            else
+            currentInterval = spawnInterval / (1f + (_speed * 0.25f));
+
+
+            currentInterval = Mathf.Max(currentInterval, 0.5f);
+
+            await Task.Delay((int)(currentInterval * 1000));
+            SpawnItem();
+        }
     }
 
     private void SpawnItem()
     {
         ItemInfo randomItem = items[Random.Range(0, items.Length)];
 
-        Item newItem = Instantiate(itemPrefab, spawnPoint.position, Quaternion.identity);
+        Item newItem = Instantiate(
+            itemPrefab,
+            spawnPoint.position,
+            Quaternion.identity
+        );
 
         newItem.Initialize(randomItem);
+
+        Debug.Log("Speed: " + _speed);
+        Debug.Log("Spawn Interval: " + (spawnInterval / (1f + (_speed * 0.3f))));
     }
 }

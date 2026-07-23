@@ -6,6 +6,8 @@ public class Item : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] private float startSpeed = 1f;
+
+    /* OLD SPEED SYSTEM */
   //[SerializeField] private float acceleration = 0.3f;
   //[SerializeField] private float maxSpeed = 6f;
 
@@ -53,6 +55,8 @@ public class Item : MonoBehaviour
         spriteRenderer.sprite = info.sprites[randomSprite];
     }
 
+
+    //Dragging 
     public void StartDrag()
     {
         isDragging = true;
@@ -70,11 +74,7 @@ public class Item : MonoBehaviour
         rb.angularVelocity = 0f;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("Item çarptı: " + other.name);
-    }
-
+    //Resetting dragged/clicked item's speed
     public void EnablePhysics()
     {
         if (usePhysics)
@@ -86,4 +86,10 @@ public class Item : MonoBehaviour
         rb.angularVelocity = 0f;
         rb.gravityScale = 1f;
     }
+
+    /* TEST */
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    Debug.Log("Item çarptı: " + other.name);
+    //}
 }
