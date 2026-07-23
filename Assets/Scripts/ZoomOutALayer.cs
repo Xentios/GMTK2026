@@ -1,10 +1,12 @@
 using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class ZoomOutALayer : MonoBehaviour
 {
+    public Camera renderTextureCam;
     public RenderTexture renderTexture;
     public Volume postProcessEffects;
 
@@ -15,6 +17,8 @@ public class ZoomOutALayer : MonoBehaviour
 
     public void OnZoomOut()
     {
+        // renderTextureCam.Render();       
+        StartCoroutine(RenderOneFrame(renderTextureCam));
         tempImage.texture = GetSS();
         DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 1f, duration).OnComplete(ChangeLevel);
 
@@ -35,5 +39,12 @@ public class ZoomOutALayer : MonoBehaviour
         RenderTexture.active = null;
 
         return texture;
+    }
+
+    IEnumerator RenderOneFrame(Camera camera)
+    {
+        camera.enabled = true;
+        yield return new WaitForEndOfFrame();
+        camera.enabled = false;
     }
 }

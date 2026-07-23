@@ -742,6 +742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a359e2c356f0add4aa652fcbf02b2393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZoomOutALayer
+  renderTextureCam: {fileID: 1246785969}
   renderTexture: {fileID: 8400000, guid: 5e1e5d3c34c7883468da39d8c799e643, type: 2}
   postProcessEffects: {fileID: 1734682164}
   duration: 2
@@ -1009,7 +1010,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246785967}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.6603774, g: 0, b: 0.50211257, a: 0}
