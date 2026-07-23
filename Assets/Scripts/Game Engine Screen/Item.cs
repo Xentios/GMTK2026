@@ -32,10 +32,8 @@ public class Item : MonoBehaviour
         if (isDragging)
             return;
 
-        currentSpeed += acceleration * Time.fixedDeltaTime;
-        currentSpeed = Mathf.Min(currentSpeed, maxSpeed);
-
-        rb.linearVelocity = Vector2.down * currentSpeed;
+        rb.linearVelocity = Vector2.down * GameManager.Instance.CurrentFallSpeed;
+        Debug.Log(currentSpeed);
     }
 
     public void Initialize(ItemInfo info)
@@ -58,7 +56,6 @@ public class Item : MonoBehaviour
     {
         isDragging = false;
 
-        currentSpeed = startSpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
