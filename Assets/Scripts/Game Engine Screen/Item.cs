@@ -6,15 +6,18 @@ public class Item : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] private float startSpeed = 1f;
-    [SerializeField] private float acceleration = 0.3f;
-    [SerializeField] private float maxSpeed = 6f;
+  //[SerializeField] private float acceleration = 0.3f;
+  //[SerializeField] private float maxSpeed = 6f;
 
     private Rigidbody2D rb;
+    private RigidbodyType2D oldBodyType;
     private SpriteRenderer spriteRenderer;
 
     private float currentSpeed;
 
     private bool isDragging;
+    public bool IsDropped { get; private set; }
+    private bool usePhysics = false;
 
     public ItemType ItemType { get; private set; }
 
@@ -30,10 +33,15 @@ public class Item : MonoBehaviour
     private void FixedUpdate()
     {
         if (isDragging)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        if (usePhysics)
             return;
 
         rb.linearVelocity = Vector2.down * GameManager.Instance.CurrentFallSpeed;
-        Debug.Log(currentSpeed);
     }
 
     public void Initialize(ItemInfo info)
@@ -50,16 +58,32 @@ public class Item : MonoBehaviour
         isDragging = true;
 
         rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.gravityScale = 1f;
     }
 
     public void EndDrag()
     {
         isDragging = false;
 
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Item çarptı: " + other.name);
+    }
+
+    public void EnablePhysics()
+    {
+        if (usePhysics)
+            return;
+
+        usePhysics = true;
+
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        rb.gravityScale = 1f;
     }
 }
