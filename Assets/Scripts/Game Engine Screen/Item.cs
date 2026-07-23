@@ -8,8 +8,8 @@ public class Item : MonoBehaviour
     [SerializeField] private float startSpeed = 1f;
 
     /* OLD SPEED SYSTEM */
-  //[SerializeField] private float acceleration = 0.3f;
-  //[SerializeField] private float maxSpeed = 6f;
+    //[SerializeField] private float acceleration = 0.3f;
+    //[SerializeField] private float maxSpeed = 6f;
 
     private Rigidbody2D rb;
     private RigidbodyType2D oldBodyType;
@@ -43,7 +43,7 @@ public class Item : MonoBehaviour
         if (usePhysics)
             return;
 
-        rb.linearVelocity = Vector2.down * GameManager.Instance.CurrentFallSpeed;
+        rb.linearVelocity = Vector2.down * GameEngineManager.Instance.CurrentFallSpeed;
     }
 
     public void Initialize(ItemInfo info)

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameEngineManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameEngineManager Instance;
 
     [Header("Falling Speed")]
     [SerializeField] private float startSpeed = 2f;
