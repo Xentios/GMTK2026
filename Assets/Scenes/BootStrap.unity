@@ -279,9 +279,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   burnOutWarn: {fileID: 439978131}
   demotivationWarn: {fileID: 439978130}
+  randomRangeForDisturbanceLayer2: {x: 0.1, y: 0.2}
+  coolDownTimerForLayer2: 10
+  randomRangeForDisturbanceLayer3: {x: 0, y: 0}
+  coolDownTimerForLayer3: 5
   warningLimit: 0.7
   barFillerSpeed: 0.01
   burnOutFiller: 0
+  Leve2LayerDisturbanceCalled: 0
+  Leve3LayerDisturbanceCalled: 0
+  makeCatWalk: {fileID: 11400000, guid: fcd6e8241a63545408e8cef6a29c6262, type: 2}
   DemotivationFiller: 0
 --- !u!1 &449396101
 GameObject:
