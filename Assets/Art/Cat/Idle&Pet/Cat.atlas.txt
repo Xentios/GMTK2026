@@ -1,0 +1,21 @@
+Cat.png
+size:2048,512
+filter:Linear,Linear
+pma:true
+Layer 10
+bounds:1630,153,145,98
+offsets:1,1,146,99
+Layer 6
+bounds:1299,2,148,108
+rotate:90
+Layer 7
+bounds:2,43,794,467
+offsets:42,44,836,511
+Layer 7 Copy
+bounds:1299,152,329,358
+Layer 8
+bounds:1630,253,404,257
+Layer 9
+bounds:798,40,470,499
+offsets:0,0,470,500
+rotate:90
