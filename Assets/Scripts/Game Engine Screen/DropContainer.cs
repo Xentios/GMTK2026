@@ -1,4 +1,4 @@
-using System.Threading.Tasks;
+using System.Collections;
 using UnityEngine;
 
 [System.Serializable]
@@ -22,27 +22,29 @@ public class DropContainer : MonoBehaviour
 
     private void Start()
     {
-        SpawnLoop();
+        StartCoroutine(SpawnLoop());
     }
 
-    private async void SpawnLoop()
+    IEnumerator SpawnLoop()
     {
         while (true)
         {
             float currentInterval;
 
-            if (_speed<5)
-            currentInterval = spawnInterval / (1f + (_speed * 0.15f));
+            if (_speed < 5)
+                currentInterval = spawnInterval / (1f + (_speed * 0.15f));
             else
-            currentInterval = spawnInterval / (1f + (_speed * 0.25f));
+                currentInterval = spawnInterval / (1f + (_speed * 0.25f));
 
 
             currentInterval = Mathf.Max(currentInterval, 0.5f);
 
-            await Task.Delay((int)(currentInterval * 1000));
+            yield return new WaitForSeconds(currentInterval * 1f);
+
             SpawnItem();
         }
     }
+
 
     private void SpawnItem()
     {
