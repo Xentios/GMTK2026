@@ -35,6 +35,6 @@ public class ZoomInALayer : MonoBehaviour
     private void ChangeLevel()
     {
         SceneManager.LoadSceneAsync(2);
-        postProcessEffects.weight = 0f;
+        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 0f, 0.1f);
     }
 }

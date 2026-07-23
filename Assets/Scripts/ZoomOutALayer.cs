@@ -1,11 +1,18 @@
 using DG.Tweening;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class ZoomOutALayer : MonoBehaviour
 {
+
+    [SerializeField]
+    private InputActionReference goBackButton;
+
+    public string Layer1SceneName;
+
     public Camera renderTextureCam;
     public RenderTexture renderTexture;
     public Volume postProcessEffects;
@@ -14,19 +21,54 @@ public class ZoomOutALayer : MonoBehaviour
 
     public RawImage tempImage;
 
+    private bool MaxLevel = false;
+
+
+    public AudioSource AudioSource;
+    public AudioClip errorSound;
+
+    private void OnEnable()
+    {
+        goBackButton.action.performed += Action_performed;
+    }
+    private void OnDisable()
+    {
+        goBackButton.action.performed -= Action_performed;
+    }
+
+    private void Action_performed(InputAction.CallbackContext obj)
+    {
+        OnZoomOut();
+    }
 
     public void OnZoomOut()
     {
         // renderTextureCam.Render();       
         StartCoroutine(RenderOneFrame(renderTextureCam));
         tempImage.texture = GetSS();
-        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 1f, duration).OnComplete(ChangeLevel);
+        MaxLevel = SceneManager.GetActiveScene().name == Layer1SceneName;
+        var offset = MaxLevel ? duration - 0.3f : 0f;
+
+        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 1f, duration - offset).OnComplete(ChangeLevel);
 
     }
+
+    private void PlayAudio()
+    {
+        AudioSource.PlayOneShot(errorSound);
+    }
+
     private void ChangeLevel()
     {
-        SceneManager.LoadSceneAsync(1);
+        if (MaxLevel == true)
+        {
+            PlayAudio();
+        }
+
         DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 0f, 0.3f);
+
+        if (MaxLevel == true) return;
+        SceneManager.LoadSceneAsync(1);
     }
 
 
