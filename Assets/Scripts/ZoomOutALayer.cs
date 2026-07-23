@@ -16,12 +16,13 @@ public class ZoomOutALayer : MonoBehaviour
     public void OnZoomOut()
     {
         tempImage.texture = GetSS();
-        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 1f, duration / 2f);//.OnComplete(ChangeLevel);
-        ChangeLevel();
+        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 1f, duration).OnComplete(ChangeLevel);
+
     }
     private void ChangeLevel()
     {
         SceneManager.LoadSceneAsync(1);
+        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 0f, 0.3f);
     }
 
 

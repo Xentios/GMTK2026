@@ -340,7 +340,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 748349824}
+    m_TransformParent: {fileID: 936442960}
     m_Modifications:
     - target: {fileID: 2221712392496686571, guid: 776b660eecf02634d8fa759c3a223da4, type: 3}
       propertyPath: m_Name
@@ -473,38 +473,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487847430}
   m_CullTransparentMesh: 1
---- !u!1 &748349823
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 748349824}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &748349824
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748349823}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 464694092}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &776417069
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,7 +743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZoomOutALayer
   renderTexture: {fileID: 8400000, guid: 5e1e5d3c34c7883468da39d8c799e643, type: 2}
-  postProcessEffects: {fileID: 0}
+  postProcessEffects: {fileID: 1734682164}
   duration: 2
   tempImage: {fileID: 1493875006}
 --- !u!114 &901387107
@@ -869,6 +837,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 464694092}
   - {fileID: 1246785970}
   - {fileID: 776417073}
   - {fileID: 901387105}
@@ -1236,37 +1205,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295073620}
   m_CullTransparentMesh: 1
---- !u!1 &1329531978
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1329531979}
-  m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1329531979
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329531978}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1493875004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,6 +1426,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 918065397784096170, guid: 2f466d8d3d7b7204ca8bb23791c625eb, type: 3}
   m_PrefabInstance: {fileID: 7090296268731229878}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1734682164 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5647519655162845038, guid: 776b660eecf02634d8fa759c3a223da4, type: 3}
+  m_PrefabInstance: {fileID: 464694091}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
 --- !u!1 &1820213161 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4133509886277834376, guid: 134bf7c241b918e46bf986ca515551d3, type: 3}
@@ -1904,5 +1853,3 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 936442960}
-  - {fileID: 748349824}
-  - {fileID: 1329531979}

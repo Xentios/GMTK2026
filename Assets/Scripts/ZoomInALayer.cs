@@ -35,5 +35,6 @@ public class ZoomInALayer : MonoBehaviour
     private void ChangeLevel()
     {
         SceneManager.LoadSceneAsync(2);
+        postProcessEffects.weight = 0f;
     }
 }
