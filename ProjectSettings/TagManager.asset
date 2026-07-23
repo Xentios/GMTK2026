@@ -14,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Spikes
-  - 
+  - Items
   - 
   - 
   - 
@@ -42,6 +42,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Items
+    uniqueID: 3877731441
     locked: 0
   m_RenderingLayers:
   - Default
