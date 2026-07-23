@@ -293,7 +293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 9.7}
+  m_AnchoredPosition: {x: 0, y: -56.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &615193084
@@ -907,6 +907,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 615193083}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3915533370568236585, guid: a6655dd896c3f91438356c4402c385d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9000791647766934010}
     - targetCorrespondingSourceObject: {fileID: 7156261312989597725, guid: a6655dd896c3f91438356c4402c385d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9000791647766934007}
@@ -968,6 +971,27 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2994512896183469440, guid: a6655dd896c3f91438356c4402c385d3, type: 3}
   m_PrefabInstance: {fileID: 9000791647766934005}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9000791647766934009 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3915533370568236585, guid: a6655dd896c3f91438356c4402c385d3, type: 3}
+  m_PrefabInstance: {fileID: 9000791647766934005}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9000791647766934010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000791647766934009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3c11c3adfe55f47b3538ebcbda15e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  days: {fileID: 0}
+  hours: {fileID: 0}
+  minutes: {fileID: 0}
+  seconds: {fileID: 0}
 --- !u!114 &9000791647766934011
 MonoBehaviour:
   m_ObjectHideFlags: 0
