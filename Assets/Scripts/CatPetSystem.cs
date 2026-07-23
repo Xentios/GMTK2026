@@ -9,16 +9,16 @@ public class CatPetSystem : MonoBehaviour
 
     public Collider2D catCollider;
 
-    private SkeletonRenderer catSkeletonRenderer;
-    private SkeletonAnimation catSkeletonAnim;
+    public SkeletonRenderer catSkeletonRenderer;
+    public SkeletonAnimation catSkeletonAnim;
 
     public AnimationReferenceAsset catPetting;
     public AnimationReferenceAsset catIdle;
     public AnimationReferenceAsset catAfterPetting;
     private void Awake()
     {
-        catSkeletonRenderer = catCollider.transform.parent.GetComponent<SkeletonRenderer>();
-        catSkeletonAnim = catSkeletonRenderer.GetComponent<SkeletonAnimation>();
+        //catSkeletonRenderer = catCollider.transform.parent.GetComponent<SkeletonRenderer>();
+        //catSkeletonAnim = catSkeletonRenderer.GetComponent<SkeletonAnimation>();
     }
 
     private void OnEnable()
@@ -51,6 +51,7 @@ public class CatPetSystem : MonoBehaviour
         if (isPetting == true) return;
         var mousePos = pointerPos.action.ReadValue<Vector2>();
         var worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        worldPos.z = 0;
         if (catCollider.bounds.Contains(worldPos) == false) return;
 
         isPetting = true;
