@@ -25,8 +25,13 @@ public class ZoomInALayer : MonoBehaviour
 
     public void ZoomIn()
     {
+        if (GameManager.instance.AnimationOnProgress == true) return;
+
+        GameManager.instance.AnimationOnProgress = true;
         var oSize = originalorthographicSize;
         DOTween.To(() => cam.orthographicSize, x => cam.orthographicSize = x, zoomLevel, duration).OnComplete(ChangeLevel);
+
+        postProcessEffects.weight = 0f;
         DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 1f, duration / 2f);//.OnComplete(ChangeLevel);
         var finalRotation = Quaternion.LookRotation(zoomTarget.position - cam.transform.position);
         cam.transform.DORotateQuaternion(finalRotation, duration);
@@ -34,7 +39,7 @@ public class ZoomInALayer : MonoBehaviour
 
     private void ChangeLevel()
     {
-        SceneManager.LoadSceneAsync(2);
-        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 0f, 0.3f);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 0f, 0.3f).OnComplete(() => GameManager.instance.AnimationOnProgress = false);
     }
 }

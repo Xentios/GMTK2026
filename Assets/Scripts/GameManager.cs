@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public float burnOutFiller;
 
 
+    public bool AnimationOnProgress;
+
     public bool Leve2LayerDisturbanceCalled;
     public bool Leve3LayerDisturbanceCalled;
     public GameEvent makeCatWalk;

@@ -11,10 +11,9 @@ public class ZoomOutALayer : MonoBehaviour
     [SerializeField]
     private InputActionReference goBackButton;
 
-    public string Layer1SceneName;
+    public Camera renderTextureCamForLayer1;
+    public Camera renderTextureCamForLayer2;
 
-    public Camera renderTextureCam;
-    public RenderTexture renderTexture;
     public Volume postProcessEffects;
 
     public float duration = 1f;
@@ -43,12 +42,19 @@ public class ZoomOutALayer : MonoBehaviour
 
     public void OnZoomOut()
     {
-        // renderTextureCam.Render();       
-        StartCoroutine(RenderOneFrame(renderTextureCam));
-        tempImage.texture = GetSS();
-        MaxLevel = SceneManager.GetActiveScene().name == Layer1SceneName;
+        if (GameManager.instance.AnimationOnProgress == true) return;
+
+        GameManager.instance.AnimationOnProgress = true;
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+            StartCoroutine(RenderOneFrame(renderTextureCamForLayer1));
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+            StartCoroutine(RenderOneFrame(renderTextureCamForLayer2));
+
+        //MaxLevel = SceneManager.GetActiveScene().name == Layer1SceneName;
+        MaxLevel = SceneManager.GetActiveScene().buildIndex == 1;
         var offset = MaxLevel ? duration - 0.3f : 0f;
 
+        postProcessEffects.weight = 0f;
         DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 1f, duration - offset).OnComplete(ChangeLevel);
 
     }
@@ -65,14 +71,20 @@ public class ZoomOutALayer : MonoBehaviour
             PlayAudio();
         }
 
-        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 0f, 0.3f);
-
+        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 0f, 0.3f).OnComplete(CreatorOfBugs);
         if (MaxLevel == true) return;
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex - 1);
+
+    }
+
+    private void CreatorOfBugs()
+    {
+        GameManager.instance.AnimationOnProgress = false;
+
     }
 
 
-    private Texture2D GetSS()
+    private Texture2D GetSS(RenderTexture renderTexture)
     {
         RenderTexture.active = renderTexture;
         Texture2D texture = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.RGBA32, false);

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2734477888337026831}
   - component: {fileID: 7731546883605862567}
   - component: {fileID: 7661618384134633073}
+  - component: {fileID: 8048867451119059524}
   m_Layer: 0
   m_Name: Spine GameObject (CatWalk)
   m_TagString: Untagged
@@ -175,3 +176,19 @@ MonoBehaviour:
   addNormalsDeprecated: 0
   calculateTangentsDeprecated: 0
   maskInteractionDeprecated: 0
+--- !u!114 &8048867451119059524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7763679916836860633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9fae9932f27344ea416de7f356d83c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CatMover
+  speed: 1
+  direction: {x: 1, y: 0}
+  IsWalking: 1
+  skeletonRenderer: {fileID: 7731546883605862567}
