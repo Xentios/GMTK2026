@@ -7,6 +7,7 @@ TagManager:
   - Exit
   - Ground
   - DragArea
+  - Items
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - UI
   - Spikes
   - Items
-  - 
+  - Draggable
   - 
   - 
   - 

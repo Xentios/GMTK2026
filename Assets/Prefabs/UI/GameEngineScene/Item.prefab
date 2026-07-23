@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 7005516809623340381}
   - component: {fileID: 321226116625409502}
   - component: {fileID: -4155291171103104147}
-  - component: {fileID: 8542085997070608502}
   m_Layer: 0
   m_Name: Item
-  m_TagString: Untagged
+  m_TagString: Items
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,8 +165,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 0.5}
-  m_EdgeRadius: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0.36
 --- !u!114 &-4155291171103104147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,15 +180,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   startSpeed: 1
---- !u!114 &8542085997070608502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4623121148812014824}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f1381cdc03e8c54fa21a5d5e41e7a3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemDrag
