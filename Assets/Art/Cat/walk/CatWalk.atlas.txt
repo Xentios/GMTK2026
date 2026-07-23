@@ -1,0 +1,37 @@
+CatWalk.png
+size:2048,512
+filter:Linear,Linear
+pma:true
+Frontleft
+bounds:1321,55,105,160
+rotate:90
+Layer 10
+bounds:1853,207,150,84
+offsets:2,2,154,87
+rotate:90
+Layer 11
+bounds:820,40,470,499
+offsets:0,0,470,500
+rotate:90
+Layer 12
+bounds:2,162,816,348
+offsets:20,142,836,490
+Layer 6
+bounds:2,2,158,96
+rotate:90
+Layer 7 Copy
+bounds:1321,162,327,348
+offsets:2,1,331,351
+Layer 8
+bounds:1650,75,435,201
+offsets:0,1,435,202
+rotate:90
+backRIght
+bounds:1853,359,103,151
+backleft
+bounds:100,10,103,150
+offsets:0,1,103,151
+frontRIght
+bounds:1483,57,103,150
+offsets:0,1,103,151
+rotate:90
