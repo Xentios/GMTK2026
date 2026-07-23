@@ -1,9 +1,14 @@
+using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class ZoomOutALayer : MonoBehaviour
 {
     public RenderTexture renderTexture;
+    public Volume postProcessEffects;
+
+    public float duration = 1f;
 
     public RawImage tempImage;
 
@@ -11,6 +16,7 @@ public class ZoomOutALayer : MonoBehaviour
     public void OnZoomOut()
     {
         tempImage.texture = GetSS();
+        DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 1f, duration / 2f);//.OnComplete(ChangeLevel);
         ChangeLevel();
     }
     private void ChangeLevel()
