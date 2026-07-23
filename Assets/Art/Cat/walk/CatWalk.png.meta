@@ -47,6 +47,9 @@ TextureImporter:
   - first:
       213: 3072505542371300088
     second: CatWalk_14
+  - first:
+      213: 1973750219871895481
+    second: CatWalk_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,10 +148,10 @@ TextureImporter:
       name: CatWalk_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 352
-        width: 96
-        height: 158
+        x: 111
+        y: 405
+        width: 108
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,10 +170,10 @@ TextureImporter:
       name: CatWalk_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 351
-        width: 103
-        height: 151
+        x: 148
+        y: 477
+        width: 45
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +192,10 @@ TextureImporter:
       name: CatWalk_2
       rect:
         serializedVersion: 2
-        x: 819
-        y: 2
-        width: 500
-        height: 470
+        x: 220
+        y: 352
+        width: 96
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +214,10 @@ TextureImporter:
       name: CatWalk_3
       rect:
         serializedVersion: 2
-        x: 1321
-        y: 352
-        width: 160
-        height: 105
+        x: 318
+        y: 351
+        width: 103
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,10 +236,10 @@ TextureImporter:
       name: CatWalk_4
       rect:
         serializedVersion: 2
-        x: 1483
-        y: 352
-        width: 151
-        height: 103
+        x: 1
+        y: 351
+        width: 99
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +258,10 @@ TextureImporter:
       name: CatWalk_5
       rect:
         serializedVersion: 2
-        x: 1650
-        y: 227
-        width: 56
-        height: 210
+        x: 819
+        y: 2
+        width: 502
+        height: 470
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,10 +280,10 @@ TextureImporter:
       name: CatWalk_6
       rect:
         serializedVersion: 2
-        x: 1670
-        y: 223
-        width: 56
-        height: 195
+        x: 1323
+        y: 345
+        width: 160
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +302,10 @@ TextureImporter:
       name: CatWalk_7
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 590
-        height: 348
+        x: 1485
+        y: 345
+        width: 152
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,10 +324,10 @@ TextureImporter:
       name: CatWalk_8
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 1
-        width: 329
-        height: 350
+        x: 1651
+        y: 227
+        width: 56
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -343,10 +346,10 @@ TextureImporter:
       name: CatWalk_9
       rect:
         serializedVersion: 2
-        x: 1852
-        y: 248
-        width: 53
-        height: 58
+        x: 1671
+        y: 223
+        width: 56
+        height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +368,10 @@ TextureImporter:
       name: CatWalk_10
       rect:
         serializedVersion: 2
-        x: 804
-        y: 234
-        width: 14
-        height: 6
+        x: 2
+        y: 2
+        width: 590
+        height: 348
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -387,10 +390,10 @@ TextureImporter:
       name: CatWalk_11
       rect:
         serializedVersion: 2
-        x: 1715
-        y: 88
-        width: 23
-        height: 76
+        x: 804
+        y: 234
+        width: 14
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -409,10 +412,10 @@ TextureImporter:
       name: CatWalk_12
       rect:
         serializedVersion: 2
-        x: 1722
-        y: 2
-        width: 130
-        height: 178
+        x: 1322
+        y: 1
+        width: 328
+        height: 343
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -431,10 +434,10 @@ TextureImporter:
       name: CatWalk_13
       rect:
         serializedVersion: 2
-        x: 1880
-        y: 154
-        width: 58
-        height: 58
+        x: 1716
+        y: 88
+        width: 23
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -453,10 +456,10 @@ TextureImporter:
       name: CatWalk_14
       rect:
         serializedVersion: 2
-        x: 1853
+        x: 1723
         y: 2
-        width: 103
-        height: 151
+        width: 130
+        height: 178
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -467,6 +470,28 @@ TextureImporter:
       bones: []
       spriteID: 8f2d57f038bb3aa20800000000000000
       internalID: 3072505542371300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatWalk_15
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 2
+        width: 103
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf30da1e5b246b10800000000000000
+      internalID: 1973750219871895481
       vertices: []
       indices: 
       edges: []
@@ -492,6 +517,7 @@ TextureImporter:
       CatWalk_12: 4615068308518212556
       CatWalk_13: -6503857894473836633
       CatWalk_14: 3072505542371300088
+      CatWalk_15: 1973750219871895481
       CatWalk_2: 5221702539793027775
       CatWalk_3: 449687779201606309
       CatWalk_4: -3248754182518766891
