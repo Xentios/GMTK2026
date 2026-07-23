@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -6,11 +7,14 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public Volume burnOutWarn;
+    [Obsolete]
     public Volume demotivationWarn;
 
     public float warningLimit = 0.7f;
     public float barFillerSpeed = 1.0f;
     public float burnOutFiller;
+
+    [Obsolete]
     public float DemotivationFiller;
 
     void Awake()
