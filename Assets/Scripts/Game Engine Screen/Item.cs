@@ -124,7 +124,8 @@ public class Item : MonoBehaviour
         {
             corruption = true;
             value += valueCorruption;
-            spriteRenderer.color = Color.red;
+            ColorUtility.TryParseHtmlString("#BA3684", out Color newColor);
+            spriteRenderer.color = newColor;
             timeCost *= 10;
         }
 
