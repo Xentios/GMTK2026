@@ -418,6 +418,7 @@ MonoBehaviour:
   Leve2LayerDisturbanceCalled: 0
   Leve3LayerDisturbanceCalled: 0
   makeCatWalk: {fileID: 11400000, guid: fcd6e8241a63545408e8cef6a29c6262, type: 2}
+  catPawEvent: {fileID: 0}
   DemotivationFiller: 0
 --- !u!1 &449396101
 GameObject:
@@ -975,6 +976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 901387105}
   - component: {fileID: 901387106}
+  - component: {fileID: 901387109}
   - component: {fileID: 901387108}
   m_Layer: 0
   m_Name: ZoomOut
@@ -1115,6 +1117,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &901387109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901387104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae47eee56886e74daa9d497a2cc4ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 6699fbb66d83136418976b99fc3eba9e, type: 2}
+  onEventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 901387106}
+        m_TargetAssemblyTypeName: ZoomOutALayer, Assembly-CSharp
+        m_MethodName: OnZoomOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onEventTriggeredWithParameter:
+    m_PersistentCalls:
+      m_Calls: []
+  onEventTriggeredWithParameterInt:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &936442958
 GameObject:
   m_ObjectHideFlags: 0
