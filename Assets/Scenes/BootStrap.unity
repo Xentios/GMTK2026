@@ -412,7 +412,7 @@ MonoBehaviour:
   randomRangeForDisturbanceLayer3: {x: 0, y: 0}
   coolDownTimerForLayer3: 5
   warningLimit: 0.7
-  barFillerSpeed: 0.01
+  barFillerSpeed: 0.002
   burnOutFiller: 1
   AnimationOnProgress: 0
   Leve2LayerDisturbanceCalled: 0

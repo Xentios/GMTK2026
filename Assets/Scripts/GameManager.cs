@@ -104,8 +104,11 @@ public class GameManager : MonoBehaviour
 
     public void RemoveBurnOut(float time)
     {
-        burnOutFiller += time;
-        burnOutFiller = Mathf.Max(0f, burnOutFiller);
+        if (burnOutFiller<1)
+        {
+            burnOutFiller += time;
+            burnOutFiller = Mathf.Max(0f, burnOutFiller);
+        }
 
     }
 

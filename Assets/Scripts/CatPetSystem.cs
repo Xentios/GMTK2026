@@ -17,7 +17,7 @@ public class CatPetSystem : MonoBehaviour
     public AnimationReferenceAsset catAfterPetting;
 
     public GameObject hand;
-    public float PettingReliefSpeed = 1.0f;
+    public float PettingReliefSpeed = 3.0f;
 
     private void OnEnable()
     {
