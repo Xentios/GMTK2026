@@ -63,7 +63,7 @@ public class Item : MonoBehaviour, IDrag
 
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
-        rb.gravityScale = 1f;
+        rb.gravityScale = 0f;
     }
 
     public void onEndDrag()
@@ -72,6 +72,7 @@ public class Item : MonoBehaviour, IDrag
 
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
+        rb.gravityScale = 1f;
     }
 
     //Resetting dragged/clicked item's speed

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -16,6 +17,8 @@ public class InputGE : MonoBehaviour
     private WaitForFixedUpdate waitForFixedUpdate = new WaitForFixedUpdate();
     private Vector3 velocity = Vector3.zero;
 
+
+    private GameObject draggredGameObject;
     private void Awake()
     {
         mainCamera = Camera.main;
@@ -25,28 +28,31 @@ public class InputGE : MonoBehaviour
     {
         mouseClick.Enable();
         mouseClick.performed += MousePressed;
+        mouseClick.canceled += MouseLeftButtonReleased;
     }
+
 
     private void OnDisable()
     {
         mouseClick.performed -= MousePressed;
+        mouseClick.canceled -= MouseLeftButtonReleased;
         mouseClick.Disable();
     }
 
     private void MousePressed(InputAction.CallbackContext context)
     {
         Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
-        {
-            if (hit.collider != null && (hit.collider.gameObject.CompareTag("Items"))
-                || hit.collider.gameObject.layer == LayerMask.NameToLayer("Draggable")
-                || hit.collider.gameObject.GetComponent<IDrag>() != null
-                )
-            {
-                StartCoroutine(DragUpdate(hit.collider.gameObject));
-            }
-        }
+        //RaycastHit hit;
+        //if (Physics.Raycast(ray, out hit))
+        //{
+        //    if (hit.collider != null && (hit.collider.gameObject.CompareTag("Items"))
+        //        || hit.collider.gameObject.layer == LayerMask.NameToLayer("Draggable")
+        //        || hit.collider.gameObject.GetComponent<IDrag>() != null
+        //        )
+        //    {
+        //        StartCoroutine(DragUpdate(hit.collider.gameObject));
+        //    }
+        //}
 
         RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray);
         if (hit2D.collider != null && (hit2D.collider.gameObject.CompareTag("Items"))
@@ -82,8 +88,14 @@ public class InputGE : MonoBehaviour
                 yield return null;
             }
         }
-        IDragComponent.onEndDrag();
+        //IDragComponent.onEndDrag();
     }
+
+    private void MouseLeftButtonReleased(InputAction.CallbackContext context)
+    {
+        throw new NotImplementedException();
+    }
+
 
 
 }
