@@ -1,35 +1,59 @@
 CatWalk.png
-size:2048,512
+size:2048,1024
 filter:Linear,Linear
 Frontleft
-bounds:1323,62,105,160
+bounds:1491,383,105,160
+Frontleft Copy
+bounds:2,2,109,163
 rotate:90
 Layer 10
-bounds:2,15,216,145
-offsets:3,3,220,149
+bounds:1862,798,217,149
+offsets:3,0,220,149
+rotate:90
 Layer 11
-bounds:820,40,470,501
+bounds:1359,545,470,501
 offsets:0,0,470,502
 rotate:90
+Layer 11 Copy
+bounds:851,545,470,506
+offsets:0,0,470,507
+rotate:90
 Layer 12
-bounds:2,162,816,348
+bounds:2,316,816,348
 offsets:20,142,836,490
+Layer 12 Copy
+bounds:2,666,847,349
+offsets:1,142,848,491
+Layer 13 Copy 2
+bounds:439,175,215,139
+offsets:4,0,220,139
 Layer 6
-bounds:220,2,158,96
-rotate:90
+bounds:439,77,158,96
+Layer 6 Copy
+bounds:1862,548,138,94
+offsets:0,1,139,95
 Layer 7 Copy
-bounds:1323,169,326,341
-offsets:1,1,328,343
+bounds:820,215,328,343
+rotate:90
+Layer 7 Copy 2
+bounds:1165,237,324,306
+offsets:1,1,325,307
 Layer 8
-bounds:1651,75,435,201
+bounds:2,113,435,201
 offsets:0,1,435,202
-rotate:90
 backRIght
-bounds:1854,357,103,153
-backleft
-bounds:318,9,103,151
-offsets:0,1,103,152
-frontRIght
-bounds:1485,64,103,151
-offsets:0,1,103,152
+bounds:167,8,103,153
 rotate:90
+backRIght Copy
+bounds:656,211,103,153
+rotate:90
+backleft
+bounds:1703,392,103,151
+offsets:0,1,103,152
+backleft Copy
+bounds:1862,644,105,152
+frontRIght
+bounds:1491,230,103,151
+offsets:0,1,103,152
+frontRIght Copy
+bounds:1598,391,103,152

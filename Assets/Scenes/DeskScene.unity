@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: spine-unity::Spine.Unity.SkeletonRenderer
   skeletonDataAsset: {fileID: 11400000, guid: bad45c1f7fed02c4db3cf752fb6823ff, type: 2}
-  initialSkinName: 
+  initialSkinName: calico
   initialFlipX: 0
   initialFlipY: 0
   meshSettings:
@@ -1404,7 +1404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: spine-unity::Spine.Unity.SkeletonRenderer
   skeletonDataAsset: {fileID: 11400000, guid: 5c748d93b535db8408b50de1197bff6a, type: 2}
-  initialSkinName: 
+  initialSkinName: calico
   initialFlipX: 0
   initialFlipY: 0
   meshSettings:
