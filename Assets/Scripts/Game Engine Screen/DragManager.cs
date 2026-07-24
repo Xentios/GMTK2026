@@ -6,6 +6,7 @@ public class DragManager : MonoBehaviour
     private Camera cam;
     private ItemDrag currentItem;
 
+    public BoxCollider2D dragArea;
     private void Awake()
     {
         cam = Camera.main;
@@ -44,6 +45,10 @@ public class DragManager : MonoBehaviour
              Mouse.current.leftButton.wasReleasedThisFrame) //release
         {
             currentItem.EndDrag();
+            if (dragArea.bounds.Contains(currentItem.transform.position))
+            {
+                Debug.Log("inside");
+            }
             currentItem = null;
         }
     }

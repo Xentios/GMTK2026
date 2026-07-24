@@ -58,7 +58,7 @@ public class DropContainer : MonoBehaviour
 
         newItem.Initialize(randomItem);
 
-        Debug.Log("Speed: " + _speed);
-        Debug.Log("Spawn Interval: " + (spawnInterval / (1f + (_speed * 0.3f))));
+        //Debug.Log("Speed: " + _speed);
+        //Debug.Log("Spawn Interval: " + (spawnInterval / (1f + (_speed * 0.3f))));
     }
 }

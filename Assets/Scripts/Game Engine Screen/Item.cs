@@ -24,6 +24,7 @@ public class Item : MonoBehaviour
     private bool usePhysics = false;
 
     public ItemType ItemType { get; private set; }
+    public float value = 10f;
 
     private void Awake()
     {
