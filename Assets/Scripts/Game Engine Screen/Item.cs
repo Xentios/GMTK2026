@@ -26,6 +26,7 @@ public class Item : MonoBehaviour
 
     public ItemType ItemType { get; private set; }
     public int value = 10;
+    public int timeCost = 1000;
     public float force = 100f;
 
     public int valueCorruption = -20;
@@ -124,7 +125,13 @@ public class Item : MonoBehaviour
             corruption = true;
             value += valueCorruption;
             spriteRenderer.color = Color.red;
+            timeCost *= 10;
         }
 
+    }
+
+    internal System.TimeSpan GetMyTimeCost()
+    {
+        return new System.TimeSpan(0, 0, timeCost);
     }
 }
