@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -6,10 +7,14 @@ public class TeamMemberSpawner : MonoBehaviour
 {
     public GameObject teamMemberPrefab;
 
+    public List<AudioClip> voiceLines;
+
     [SerializeField] private float spawnInterval = 5f;
     [SerializeField] private float firstDelay = 10f;
 
     public BoxCollider2D spawnCollider;
+
+    private int lastIndex = 0;
 
     private void Start()
     {
@@ -35,6 +40,8 @@ public class TeamMemberSpawner : MonoBehaviour
     {
         var pos = GetRandomPointInsideCollider(spawnCollider);
         var result = Instantiate(teamMemberPrefab, pos, Quaternion.identity);
+        result.GetComponent<AudioSource>().clip = voiceLines[Random.Range(0, voiceLines.Count)];
+        result.GetComponent<AudioSource>().PlayDelayed(1f);
     }
 
 

@@ -294,6 +294,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeamMemberSpawner
   teamMemberPrefab: {fileID: 3865953221020478599, guid: 0040b3f42346290469ceb672282f69ea, type: 3}
+  voiceLines:
+  - {fileID: 8300000, guid: 513f930064babc14a92b556ad9368576, type: 3}
+  - {fileID: 8300000, guid: db755a85773e9824ea215b62c30d9ae1, type: 3}
+  - {fileID: 8300000, guid: b4ac89d3623da434aadb65d1aeae63a2, type: 3}
+  - {fileID: 8300000, guid: 6bb646bbee59435488b95c32f0697407, type: 3}
+  - {fileID: 8300000, guid: 2fb059138bbad13479306da05eb739b3, type: 3}
+  - {fileID: 8300000, guid: 275323b30877e8a4799c45162087e465, type: 3}
+  - {fileID: 8300000, guid: 51774dba56b96924aa2e6b58bf71806e, type: 3}
+  - {fileID: 8300000, guid: dc5203a9f03da184b8c871667edaaffb, type: 3}
+  - {fileID: 8300000, guid: 77ce99090592db947969af93b128797e, type: 3}
+  - {fileID: 8300000, guid: d24972ef51ca5154a8f8f8622c4b5bb9, type: 3}
+  - {fileID: 8300000, guid: 28de9e6bed583c34bbbdf7c645e0ec0c, type: 3}
   spawnInterval: 4
   firstDelay: 10
   spawnCollider: {fileID: 199674324}
