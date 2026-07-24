@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -43,10 +44,17 @@ public class PawSwawner : MonoBehaviour
             dragManager.dragedItems.Remove(item);
             item.FireTowardsRight();
             GameManager.instance?.SetThirdLayerValue(item.ItemType, -1 * item.value);
-
+            StartCoroutine((DestroyItemInTime(item, 5f)));
         }
 
         pawHolder.transform.DOBlendableMoveBy(Vector3.down * 10, 1f);
         //spriteRenderer.transform.position = Vector3.right * 30;
+    }
+
+    IEnumerator DestroyItemInTime(Item item, float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(item.gameObject);
+
     }
 }
