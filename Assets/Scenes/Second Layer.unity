@@ -968,6 +968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   timeScale: 2
+  MotivationTimeSpeed: 1
 --- !u!1 &656127613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,6 +1795,94 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6064907784868076941, guid: 8fb9b15907f176c44a3d952f9e3a0fbf, type: 3}
   m_PrefabInstance: {fileID: 395176313497788463}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1044014528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1044014529}
+  - component: {fileID: 1044014531}
+  - component: {fileID: 1044014530}
+  - component: {fileID: 1044014532}
+  m_Layer: 5
+  m_Name: MotivationBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1044014529
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044014528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1541481985}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1050, y: 9.099976}
+  m_SizeDelta: {x: 1600.9, y: 56}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1044014530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044014528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.13578588, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 8272101109697690275, guid: e162bd0bd86944a45b3364b059b6aee0, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1044014531
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044014528}
+  m_CullTransparentMesh: 1
+--- !u!114 &1044014532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044014528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27d3c19e348d6d47ae209ecdbc6af29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowBurnoutUI
 --- !u!1 &1075672477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2793,6 +2882,7 @@ RectTransform:
   - {fileID: 1261318491}
   - {fileID: 1993667269}
   - {fileID: 110137501}
+  - {fileID: 1044014529}
   m_Father: {fileID: 656127614}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
