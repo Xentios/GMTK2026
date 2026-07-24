@@ -37,6 +37,7 @@ public class TeamMemberSpawner : MonoBehaviour
         var pos = GetRandomPointInsideCollider(spawnCollider);
         var result = Instantiate(teamMemberPrefab, pos, Quaternion.identity);
         var randomVoiceIndex = RandomExcept(0, voiceLines.Count, lastIndex);
+        lastIndex = randomVoiceIndex;
         result.GetComponent<AudioSource>().clip = voiceLines[randomVoiceIndex];
         result.GetComponent<AudioSource>().PlayDelayed(1f);
     }

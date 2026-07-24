@@ -1,16 +1,34 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DisableRenderImageAlpha : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public RawImage rawImage;
+
+    private void Awake()
     {
-        
+        if (rawImage == null) rawImage = GetComponent<RawImage>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        FixAlphaValue();
+    }
+
+    private void Start()
+    {
+        FixAlphaValue();
+    }
+
+    private void FixAlphaValue()
+    {
+        if (GameManager.instance == null) return;
+
+        var flag = GameManager.instance.DidWeVisitLayer2;
+
+        if (flag == true)
+        {
+            rawImage.color = Color.white;
+        }
     }
 }
