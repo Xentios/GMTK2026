@@ -414,9 +414,11 @@ MonoBehaviour:
   warningLimit: 0.7
   barFillerSpeed: 0.01
   burnOutFiller: 0
+  AnimationOnProgress: 0
   Leve2LayerDisturbanceCalled: 0
   Leve3LayerDisturbanceCalled: 0
   makeCatWalk: {fileID: 11400000, guid: fcd6e8241a63545408e8cef6a29c6262, type: 2}
+  catPawEvent: {fileID: 0}
   DemotivationFiller: 0
 --- !u!1 &449396101
 GameObject:
@@ -797,6 +799,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &798744235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798744236}
+  - component: {fileID: 798744237}
+  m_Layer: 0
+  m_Name: FadeOut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &798744236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798744235}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 936442960}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &798744237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798744235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f760dbb59fd5574b8a6e389ae952e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FindAndFadeOut
+  musicMixerGroup: {fileID: -1200804870990523019, guid: 3a7857f838ac385438a97619afe0b6de, type: 2}
+  fadeDuration: 0.6
 --- !u!1 &853614392
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 901387105}
   - component: {fileID: 901387106}
+  - component: {fileID: 901387109}
   - component: {fileID: 901387108}
   m_Layer: 0
   m_Name: ZoomOut
@@ -1068,6 +1117,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &901387109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901387104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae47eee56886e74daa9d497a2cc4ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 6699fbb66d83136418976b99fc3eba9e, type: 2}
+  onEventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 901387106}
+        m_TargetAssemblyTypeName: ZoomOutALayer, Assembly-CSharp
+        m_MethodName: OnZoomOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onEventTriggeredWithParameter:
+    m_PersistentCalls:
+      m_Calls: []
+  onEventTriggeredWithParameterInt:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &936442958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,6 +1215,7 @@ Transform:
   - {fileID: 901387105}
   - {fileID: 1064360692}
   - {fileID: 439978129}
+  - {fileID: 798744236}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &936442961
@@ -1275,6 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de713a2bd243fa54aa0b87d18fd5982c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GeneralTimer
+  ShowDebug: 0
 --- !u!1 &1246785967
 GameObject:
   m_ObjectHideFlags: 0

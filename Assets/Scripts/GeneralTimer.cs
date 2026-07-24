@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class GeneralTimer : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GeneralTimer : MonoBehaviour
 
     public Stopwatch jamTimer;
     private TimeSpan totalJamTime = new TimeSpan(4, 0, 0, 0);
+
+    public bool ShowDebug = true;
     void Awake()
     {
         if (instance != null)
@@ -24,11 +27,12 @@ public class GeneralTimer : MonoBehaviour
         DontDestroyOnLoad(transform.root.gameObject);
     }
 
-    //private void Update()
-    //{
+    private void Update()
+    {
+        if (ShowDebug == false) return;
 
-    //    Debug.Log(GetRemaningTime().ToString());
-    //}
+        Debug.Log(GetRemaningTime().ToString());
+    }
 
     void OnDestroy()
     {
@@ -47,6 +51,6 @@ public class GeneralTimer : MonoBehaviour
 
     public void RemoveTime(TimeSpan time)
     {
-        totalJamTime.Subtract(time);
+        totalJamTime = totalJamTime.Subtract(time);
     }
 }

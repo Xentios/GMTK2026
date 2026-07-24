@@ -1,6 +1,6 @@
 public enum ItemType
 {
     Code,
-    Character,
+    Art,
     Audio
 }
