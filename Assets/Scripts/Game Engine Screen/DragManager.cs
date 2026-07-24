@@ -9,7 +9,9 @@ public class DragManager : MonoBehaviour
 
     public BoxCollider2D dragArea;
 
-    public List<ItemDrag> dragedItems;
+    public List<Item> dragedItems;
+
+    private Vector3 offset;
     private void Awake()
     {
         cam = Camera.main;
@@ -32,6 +34,7 @@ public class DragManager : MonoBehaviour
                 {
                     currentItem = drag;
                     currentItem.BeginDrag();
+                    offset = currentItem.transform.position - (Vector3) mouseWorld;
                 }
             }
         }
@@ -41,7 +44,7 @@ public class DragManager : MonoBehaviour
             currentItem.transform.position = new Vector3(
                 mouseWorld.x,
                 mouseWorld.y,
-                currentItem.transform.position.z);
+                currentItem.transform.position.z) + offset;
         }
 
         if (currentItem != null &&
@@ -51,7 +54,9 @@ public class DragManager : MonoBehaviour
             if (dragArea.bounds.Contains(currentItem.transform.position))
             {
                 GameManager.instance?.SetThirdLayerValue(currentItem.GetMyItem().ItemType, currentItem.GetMyItem().value);
-                dragedItems.Add(currentItem);
+                dragedItems.Add(currentItem.GetMyItem());
+                currentItem.GetMyItem().ScaleDownAfterSuccessDrag();
+                Destroy(currentItem);
             }
             currentItem = null;
         }

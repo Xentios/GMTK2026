@@ -82,6 +82,11 @@ public class Item : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
+
+    }
+
+    public void ScaleDownAfterSuccessDrag()
+    {
         transform.localScale = Vector2.one * scaleReducer;
     }
 

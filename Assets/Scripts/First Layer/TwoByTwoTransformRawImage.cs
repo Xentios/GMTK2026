@@ -1,6 +1,3 @@
-using System;
-using System.Reflection;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -41,59 +38,3 @@ public class TwoByTwoTransformRawImage : RawImage
 
 
 
-
-
-[CustomEditor(typeof(TwoByTwoTransformRawImage))]
-[CanEditMultipleObjects]
-public class TwoByTwoTransformRawImageEditor : Editor
-{
-    Editor rawImageEditor;
-
-    void OnEnable()
-    {
-        var editorType = Type.GetType("UnityEditor.UI.RawImageEditor, UnityEditor.UI");
-
-        if (editorType == null)
-            editorType = Type.GetType("UnityEditor.UI.RawImageEditor, UnityEditor");
-
-        if (editorType != null)
-            rawImageEditor = CreateEditor(targets, editorType);
-    }
-
-    void OnDisable()
-    {
-        if (rawImageEditor != null)
-            DestroyImmediate(rawImageEditor);
-    }
-
-    public override void OnInspectorGUI()
-    {
-        if (rawImageEditor != null)
-        {
-            MethodInfo method = rawImageEditor.GetType().GetMethod(
-                "OnInspectorGUI",
-                BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-
-            method?.Invoke(rawImageEditor, null);
-        }
-        else
-        {
-            DrawDefaultInspector();
-        }
-
-        EditorGUILayout.Space();
-        EditorGUILayout.LabelField("2x2 Transform", EditorStyles.boldLabel);
-
-        var image = (TwoByTwoTransformRawImage) target;
-
-        image.xAxis = EditorGUILayout.Vector2Field("X Axis", image.xAxis);
-        image.yAxis = EditorGUILayout.Vector2Field("Y Axis", image.yAxis);
-        //image.zAxis = EditorGUILayout.Vector2Field("Z Axis", image.zAxis);
-
-        if (GUI.changed)
-        {
-            EditorUtility.SetDirty(image);
-            image.SetVerticesDirty();
-        }
-    }
-}
