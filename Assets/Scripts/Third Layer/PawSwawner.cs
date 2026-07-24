@@ -34,7 +34,7 @@ public class PawSwawner : MonoBehaviour
             var item = dragManager.dragedItems[Random.Range(0, dragManager.dragedItems.Count)];
             dragManager.dragedItems.Remove(item);
             item.GetMyItem().FireTowardsRight();
-            GameManager.instance.SetThirdLayerValue(item.GetMyItem().ItemType, -1 * item.GetMyItem().value);
+            GameManager.instance?.SetThirdLayerValue(item.GetMyItem().ItemType, -1 * item.GetMyItem().value);
 
         }
 

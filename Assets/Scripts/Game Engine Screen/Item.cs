@@ -28,6 +28,9 @@ public class Item : MonoBehaviour
     public int value = 10;
     public float force = 100f;
 
+    public int valueCorruption = -20;
+    public bool corruption = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -106,9 +109,17 @@ public class Item : MonoBehaviour
         rb.AddRelativeForce(Vector2.up * 10f);
         //rb.AddForce(transform.forward * 200, ForceMode.Impulse);
     }
-    /* TEST */
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    Debug.Log("Item çarptı: " + other.name);
-    //}
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (corruption == true) return;
+
+        if (other.gameObject.layer == LayerMask.NameToLayer("TeamMembers"))
+        {
+            corruption = true;
+            value += valueCorruption;
+            spriteRenderer.color = Color.red;
+        }
+
+    }
 }
