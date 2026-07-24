@@ -413,12 +413,13 @@ MonoBehaviour:
   coolDownTimerForLayer3: 5
   warningLimit: 0.7
   barFillerSpeed: 0.01
-  burnOutFiller: 0
+  burnOutFiller: 1
   AnimationOnProgress: 0
   Leve2LayerDisturbanceCalled: 0
   Leve3LayerDisturbanceCalled: 0
   makeCatWalk: {fileID: 11400000, guid: fcd6e8241a63545408e8cef6a29c6262, type: 2}
-  DemotivationFiller: 0
+  catPawEvent: {fileID: 0}
+  DemotivationFiller: 1
 --- !u!1 &449396101
 GameObject:
   m_ObjectHideFlags: 0
