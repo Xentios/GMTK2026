@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 9071dcd7a31a6844f85a0ba5a9558f87
+guid: 77ea77f54bd23ae459c89eb2c1b4d69c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8479990013618483628
-    second: Icon_Graphics_0
+      213: 5887797088989599897
+    second: DropItem_4_0
+  - first:
+      213: -547998382136356176
+    second: DropItem_4_1
+  - first:
+      213: -4524111378598712992
+    second: DropItem_4_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -56,7 +62,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -126,33 +132,88 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_Graphics_0
+      name: DropItem_4_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 160
+        width: 76
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca1f69c0df9fea570800000000000000
-      internalID: 8479990013618483628
+      spriteID: 998ddcee148a5b150800000000000000
+      internalID: 5887797088989599897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropItem_4_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 31
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b21647ff5e1568f0800000000000000
+      internalID: -547998382136356176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DropItem_4_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1
+        width: 51
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0692252cba02731c0800000000000000
+      internalID: -4524111378598712992
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
     customData: 
-    physicsShape: []
+    physicsShape:
+    - - {x: 70, y: 7.3009033}
+      - {x: 55.41028, y: 44.32218}
+      - {x: 33.024956, y: 56.986282}
+      - {x: -14, y: 54.5}
+      - {x: -68, y: 24.5}
+      - {x: -69, y: 13.5}
+      - {x: -69, y: -17.5}
+      - {x: -61, y: -28.5}
+      - {x: -7, y: -56.5}
+      - {x: 28.929955, y: -57.5}
+      - {x: 56.77002, y: -38.203907}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -161,7 +222,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Icon_Graphics_0: 8479990013618483628
+      DropItem_4_0: 5887797088989599897
+      DropItem_4_1: -547998382136356176
+      DropItem_4_2: -4524111378598712992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

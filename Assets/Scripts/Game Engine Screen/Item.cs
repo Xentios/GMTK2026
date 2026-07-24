@@ -7,6 +7,8 @@ public class Item : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float startSpeed = 1f;
 
+    public float scaleReducer = 0.25f;
+
     /* OLD SPEED SYSTEM */
     //[SerializeField] private float acceleration = 0.3f;
     //[SerializeField] private float maxSpeed = 6f;
@@ -53,6 +55,7 @@ public class Item : MonoBehaviour
         int randomSprite = Random.Range(0, info.sprites.Length);
 
         spriteRenderer.sprite = info.sprites[randomSprite];
+        gameObject.AddComponent<PolygonCollider2D>();
     }
 
 
@@ -72,6 +75,7 @@ public class Item : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
+        transform.localScale = Vector2.one * scaleReducer;
     }
 
     //Resetting dragged/clicked item's speed

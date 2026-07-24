@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9071dcd7a31a6844f85a0ba5a9558f87
+guid: e12245d37ce850c428747f5a5cdcd753
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8479990013618483628
-    second: Icon_Graphics_0
+      213: -8067819844451502260
+    second: DropItem_Graphics1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -56,7 +56,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -126,33 +126,50 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_Graphics_0
+      name: DropItem_Graphics1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
+        width: 240
         height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca1f69c0df9fea570800000000000000
-      internalID: 8479990013618483628
+      spriteID: c47fe9bb898590090800000000000000
+      internalID: -8067819844451502260
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
     customData: 
-    physicsShape: []
+    physicsShape:
+    - - {x: 119, y: -65}
+      - {x: 119, y: 74}
+      - {x: 99, y: 79}
+      - {x: 42, y: 79}
+      - {x: 23, y: 64}
+      - {x: 19, y: 47}
+      - {x: -66, y: 38}
+      - {x: -119, y: 9}
+      - {x: -119, y: -4}
+      - {x: -115, y: -13}
+      - {x: -63, y: -45}
+      - {x: 32, y: -79}
+      - {x: 104, y: -79}
+    - - {x: -89, y: 2}
+      - {x: -87, y: 8}
+      - {x: -87, y: 3}
+      - {x: -88, y: 1}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -161,7 +178,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Icon_Graphics_0: 8479990013618483628
+      DropItem_Graphics1_0: -8067819844451502260
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
