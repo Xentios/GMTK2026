@@ -1323,6 +1323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de713a2bd243fa54aa0b87d18fd5982c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GeneralTimer
+  ShowDebug: 0
 --- !u!1 &1246785967
 GameObject:
   m_ObjectHideFlags: 0
