@@ -393,7 +393,7 @@ MonoBehaviour:
   randomRangeForDisturbanceLayer3: {x: 0.1, y: 0.7}
   coolDownTimerForLayer3: 5
   warningLimit: 0.7
-  barFillerSpeed: 0.002
+  barFillerSpeed: 0.006
   burnOutFiller: 1
   AnimationOnProgress: 0
   Leve2LayerDisturbanceCalled: 0
@@ -401,6 +401,7 @@ MonoBehaviour:
   makeCatWalk: {fileID: 11400000, guid: fcd6e8241a63545408e8cef6a29c6262, type: 2}
   catPawEvent: {fileID: 11400000, guid: fe7e6c4302f85c648a9783be09cf54eb, type: 2}
   DemotivationFiller: 1
+  DidWeVisitLayer2: 0
 --- !u!1 &449396101
 GameObject:
   m_ObjectHideFlags: 0
