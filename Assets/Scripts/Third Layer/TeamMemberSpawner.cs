@@ -14,12 +14,11 @@ public class TeamMemberSpawner : MonoBehaviour
 
     public BoxCollider2D spawnCollider;
 
-    private int lastIndex = 0;
+    private int lastIndex = -1;
 
     private void Start()
     {
         StartCoroutine(SpawnLoop());
-
     }
 
     IEnumerator SpawnLoop()
@@ -28,10 +27,7 @@ public class TeamMemberSpawner : MonoBehaviour
 
         while (true)
         {
-
-
             yield return new WaitForSeconds(spawnInterval * 1f);
-
             SpawnItem();
         }
     }
@@ -40,7 +36,8 @@ public class TeamMemberSpawner : MonoBehaviour
     {
         var pos = GetRandomPointInsideCollider(spawnCollider);
         var result = Instantiate(teamMemberPrefab, pos, Quaternion.identity);
-        result.GetComponent<AudioSource>().clip = voiceLines[Random.Range(0, voiceLines.Count)];
+        var randomVoiceIndex = RandomExcept(0, voiceLines.Count, lastIndex);
+        result.GetComponent<AudioSource>().clip = voiceLines[randomVoiceIndex];
         result.GetComponent<AudioSource>().PlayDelayed(1f);
     }
 
@@ -55,6 +52,18 @@ public class TeamMemberSpawner : MonoBehaviour
         );
 
         return boxCollider.transform.TransformPoint(point);
+    }
+
+
+
+    private int RandomExcept(int minInclusive, int maxExclusive, int excluded)
+    {
+        if (excluded < minInclusive || excluded >= maxExclusive)
+            return Random.Range(minInclusive, maxExclusive);
+
+        int value = Random.Range(minInclusive, maxExclusive - 1);
+
+        return value >= excluded ? value + 1 : value;
     }
 
 }
