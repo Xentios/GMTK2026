@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class TabButtons : MonoBehaviour
@@ -17,6 +18,11 @@ public class TabButtons : MonoBehaviour
             int index = i;
             buttons[i].onClick.AddListener(() => OnButtonClicked(index));
         }
+    }
+    private void Start()
+    {
+        // buttons[0].image.sprite = buttons[0].spriteState.selectedSprite;
+        EventSystem.current.SetSelectedGameObject(buttons[0].gameObject);
     }
 
 

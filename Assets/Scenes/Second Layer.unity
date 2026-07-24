@@ -967,8 +967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba55b750ff7e7b44b9c59e06bd6d55f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  timeScale: 2
-  MotivationTimeSpeed: 1
+  timeScale: 3
+  MotivationTimeSpeed: 0.05
 --- !u!1 &656127613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,9 +1880,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1044014528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a27d3c19e348d6d47ae209ecdbc6af29, type: 3}
+  m_Script: {fileID: 11500000, guid: 42f9a4310eba25344a161c40a81504f5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShowBurnoutUI
+  m_EditorClassIdentifier: Assembly-CSharp::ShowMotivationFiller
 --- !u!1 &1075672477
 GameObject:
   m_ObjectHideFlags: 0

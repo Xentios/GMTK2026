@@ -5,7 +5,7 @@ public class DoomScrolling : MonoBehaviour
     [Range(2f, 10000f)]
     public int timeScale = 2;
 
-    public float MotivationTimeSpeed = 1f;
+    public float MotivationTimeSpeed = 0.001f;
 
 
     private void Update()

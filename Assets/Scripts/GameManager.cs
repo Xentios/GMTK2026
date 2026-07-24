@@ -114,9 +114,12 @@ public class GameManager : MonoBehaviour
 
     public void RemoveDeMotivation(float time)
     {//Min değil Max olacak
-        DemotivationFiller -= time;
-        //DemotivationFiller = Mathf.Min(0, burnOutFiller);
-        DemotivationFiller = Mathf.Max(0f, DemotivationFiller);
+
+        if (DemotivationFiller < 1)
+        {
+            DemotivationFiller += time;
+            DemotivationFiller = Mathf.Max(0f, DemotivationFiller);
+        }
     }
 
     public int GetThirdLayerValue(ItemType type)
