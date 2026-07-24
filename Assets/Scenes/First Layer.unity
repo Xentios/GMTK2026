@@ -603,6 +603,7 @@ MonoBehaviour:
   catIdle: {fileID: -6608529441467380682, guid: 6af3801f888ea5242835659c314ea42c, type: 2}
   catAfterPetting: {fileID: 4907715237786765097, guid: 6af3801f888ea5242835659c314ea42c, type: 2}
   hand: {fileID: 1934908268}
+  PettingReliefSpeed: 0.1
   handSlipOffset: 0.3
 --- !u!4 &480163687
 Transform:
@@ -879,6 +880,7 @@ GameObject:
   - component: {fileID: 815739655}
   - component: {fileID: 815739657}
   - component: {fileID: 815739656}
+  - component: {fileID: 815739658}
   m_Layer: 5
   m_Name: BurnOut Bar
   m_TagString: Untagged
@@ -943,6 +945,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815739654}
   m_CullTransparentMesh: 1
+--- !u!114 &815739658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815739654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27d3c19e348d6d47ae209ecdbc6af29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &888270022
 GameObject:
   m_ObjectHideFlags: 0

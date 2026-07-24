@@ -17,6 +17,7 @@ public class CatPetSystem : MonoBehaviour
     public AnimationReferenceAsset catAfterPetting;
 
     public GameObject hand;
+    public float PettingReliefSpeed = 1.0f;
 
     private void OnEnable()
     {
@@ -83,7 +84,7 @@ public class CatPetSystem : MonoBehaviour
                 pettingEndded(context);//Sacrilege
             }
         }
-
+        GameManager.instance.RemoveBurnOut(Time.deltaTime * PettingReliefSpeed);
 
         //DO stuff with cursor and maybe check if we move away from the cat?
 

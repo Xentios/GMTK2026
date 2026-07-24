@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         burnOutFiller += Time.deltaTime * barFillerSpeed;
+        burnOutFiller = Mathf.Min(burnOutFiller, 1f);
         DemotivationFiller += Time.deltaTime * barFillerSpeed;
 
         if (burnOutFiller > warningLimit)
@@ -57,6 +58,8 @@ public class GameManager : MonoBehaviour
         {
             burnOutWarn.weight = 0f;
         }
+
+
 
         coolDownTimerForLayer2 -= Time.deltaTime;
         coolDownTimerForLayer3 -= Time.deltaTime;
@@ -81,7 +84,7 @@ public class GameManager : MonoBehaviour
     public void RemoveBurnOut(float time)
     {
         burnOutFiller -= time;
-        burnOutFiller = Mathf.Min(0, burnOutFiller);
+        burnOutFiller = Mathf.Max(0f, burnOutFiller);
 
     }
 
