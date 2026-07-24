@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 83eabc1ca2e8a8d4da0872539deb0eb1
+guid: 577a5c5f2649ad049a9d1d4f99da23ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1866787226247435945
-    second: DropItem_Graphics0_0
+      213: -6536894783242835329
+    second: DropItem_GameplayElement1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -56,7 +56,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -126,43 +126,33 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DropItem_Graphics0_0
+      name: DropItem_GameplayElement1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 80
-        height: 70
+        x: 54
+        y: 54
+        width: 138
+        height: 106
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 759e84c88e6d716e0800000000000000
-      internalID: -1866787226247435945
+      spriteID: f7ae4be14d84845a0800000000000000
+      internalID: -6536894783242835329
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
     customData: 
-    physicsShape:
-    - - {x: 40, y: -35}
-      - {x: 39, y: 9}
-      - {x: 40, y: 35}
-      - {x: 31, y: 35}
-      - {x: -40, y: 35}
-      - {x: -40, y: 15}
-      - {x: -40, y: -12}
-      - {x: -40, y: -35}
-      - {x: -21, y: -34}
-      - {x: 3, y: -34}
+    physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -171,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DropItem_Graphics0_0: -1866787226247435945
+      DropItem_GameplayElement1_0: -6536894783242835329
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,9 +4,8 @@ using UnityEngine;
 public class ShowTotalSeconds : MonoBehaviour
 {
     public TextMeshProUGUI secondsTextField;
-
-
-
+    public double threshHold;
+    //public TMPEffects.TMPAnimations. Component;
 
     private void Update()
     {
@@ -14,5 +13,10 @@ public class ShowTotalSeconds : MonoBehaviour
 
         var totalSeconds = GeneralTimer.instance.GetRemaningTime().TotalSeconds;
         secondsTextField.text = totalSeconds.ToString("F5");
+
+        if (totalSeconds < threshHold)
+        {
+            //Component.
+        }
     }
 }
