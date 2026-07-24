@@ -9,7 +9,7 @@ public class DestroyArea : MonoBehaviour
         if (item != null)
         {
             Destroy(item.gameObject);
-            Debug.Log("silindi");
+            //  Debug.Log("silindi");
         }
     }
 }
