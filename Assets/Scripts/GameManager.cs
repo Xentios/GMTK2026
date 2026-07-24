@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public bool Leve2LayerDisturbanceCalled;
     public bool Leve3LayerDisturbanceCalled;
     public GameEvent makeCatWalk;
+    public GameEvent catPawEvent;
 
     [Obsolete]
     public float DemotivationFiller;
@@ -74,14 +75,27 @@ public class GameManager : MonoBehaviour
 
     private void TryToCallDisturbance()
     {
-        if (Leve2LayerDisturbanceCalled == true) return;
-
-        if (Random.value > randomRangeForDisturbanceLayer2.x && Random.value < randomRangeForDisturbanceLayer2.y)
+        if (Leve2LayerDisturbanceCalled == false)
         {
-            Leve2LayerDisturbanceCalled = true;
-            makeCatWalk.TriggerEvent();
-            coolDownTimerForLayer2 = 10f;
+            if (Random.value > randomRangeForDisturbanceLayer2.x && Random.value < randomRangeForDisturbanceLayer2.y)
+            {
+                Leve2LayerDisturbanceCalled = true;
+                makeCatWalk.TriggerEvent();
+                coolDownTimerForLayer2 = 10f;
+            }
         }
+
+        if (Leve3LayerDisturbanceCalled == false)
+        {
+            if (Random.value > randomRangeForDisturbanceLayer3.x && Random.value < randomRangeForDisturbanceLayer3.y)
+            {
+                Leve3LayerDisturbanceCalled = true;
+                catPawEvent.TriggerEvent();
+                coolDownTimerForLayer3 = 5f;
+            }
+        }
+
+
 
     }
 
