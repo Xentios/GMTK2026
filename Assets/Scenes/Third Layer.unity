@@ -514,6 +514,7 @@ MonoBehaviour:
   - {fileID: 7636182635799930326, guid: 5bb684a334404a9469bef36e63b4b904, type: 3}
   - {fileID: 8964578023867664817, guid: 6b5047853467bc042a04fbf290c4397b, type: 3}
   spriteRenderer: {fileID: 944624085}
+  pawHolder: {fileID: 1153987456}
   dragArea: {fileID: 692012623}
 --- !u!1 &637275258
 GameObject:
