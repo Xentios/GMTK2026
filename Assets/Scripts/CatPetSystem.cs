@@ -63,7 +63,26 @@ public class CatPetSystem : MonoBehaviour
 
     private void pettingOrNotPetting(InputAction.CallbackContext context)
     {
-        if (isPetting == false) return;
+        if (isPetting == false)
+        {
+            var mouseHoverPos = context.ReadValue<Vector2>();
+            var worldHoverPos = Camera.main.ScreenToWorldPoint(mouseHoverPos);
+            worldHoverPos.z = 0;
+
+            if (catCollider.bounds.Contains(worldHoverPos) == true)
+            {
+                Cursor.visible = false;
+                hand.transform.position = worldHoverPos;
+            }
+            else
+            {
+                Cursor.visible = true;
+                hand.transform.position = Vector3.back * 30;//Some random location or just make it inactive?
+                hand.transform.rotation = Quaternion.identity;
+            }
+
+            return;
+        }
 
         Cursor.visible = false;
         var mousePos = context.ReadValue<Vector2>();

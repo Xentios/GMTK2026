@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     private int AudioValue;
     private int ArtValue;
 
+    public bool DidWeVisitLayer2 = false;
+
     void Awake()
     {
         if (instance != null)
@@ -163,5 +165,8 @@ public class GameManager : MonoBehaviour
 
     }
 
-
+    internal void SetVisitLevel2()
+    {
+        DidWeVisitLayer2 = true;
+    }
 }

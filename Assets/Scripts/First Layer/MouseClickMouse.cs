@@ -4,20 +4,25 @@ using UnityEngine.InputSystem;
 public class MouseClickMouse : MonoBehaviour
 {
     public InputActionReference mouseClick;
+    public InputActionReference mousePosition;
 
     public Collider2D mouseCollider;
     public Collider2D keyboardCollider;
+
+    public SpriteRenderer mouseSprite;
 
     public SwitchPanel SwitchPanel;
 
     void OnEnable()
     {
         mouseClick.action.performed += switchView;
+        mousePosition.action.performed += checkMousePos;
     }
 
     void OnDisable()
     {
         mouseClick.action.performed -= switchView;
+        mousePosition.action.performed -= checkMousePos;
     }
 
 
@@ -32,4 +37,21 @@ public class MouseClickMouse : MonoBehaviour
 
         SwitchPanel.TogglePanels();
     }
+
+    private void checkMousePos(InputAction.CallbackContext context)
+    {
+        var mousePos = context.ReadValue<Vector2>();
+        var worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        worldPos.z = 0;
+        if (mouseCollider.bounds.Contains(worldPos) == true)
+        {
+            mouseSprite.color = Color.lightGreen;
+        }
+        else
+        {
+            mouseSprite.color = Color.white;
+        }
+    }
+
+
 }
