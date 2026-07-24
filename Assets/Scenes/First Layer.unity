@@ -662,9 +662,9 @@ MonoBehaviour:
   catCollider: {fileID: 673942558}
   catSkeletonRenderer: {fileID: 673942560}
   catSkeletonAnim: {fileID: 673942559}
-  catPetting: {fileID: 832928944391432289, guid: 6af3801f888ea5242835659c314ea42c, type: 2}
-  catIdle: {fileID: -6608529441467380682, guid: 6af3801f888ea5242835659c314ea42c, type: 2}
-  catAfterPetting: {fileID: 4907715237786765097, guid: 6af3801f888ea5242835659c314ea42c, type: 2}
+  catPetting: {fileID: 6213451731387755635, guid: 6af3801f888ea5242835659c314ea42c, type: 2}
+  catIdle: {fileID: 2453144188931081625, guid: 6af3801f888ea5242835659c314ea42c, type: 2}
+  catAfterPetting: {fileID: -2384236362173223601, guid: 6af3801f888ea5242835659c314ea42c, type: 2}
   hand: {fileID: 1934908268}
   PettingReliefSpeed: 0.1
   handSlipOffset: 0.3
@@ -740,9 +740,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6215992573564446279, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215992573564446279, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c6407c4ec76ec5846b451cf030c45506, type: 2}
+    - target: {fileID: 6994522182281540446, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
+      propertyPath: initialSkinName
+      value: orange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

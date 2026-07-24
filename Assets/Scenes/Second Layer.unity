@@ -3207,6 +3207,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2734477888337026831, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734477888337026831, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 52de15725cdd16d408a0ea55d870ed44, type: 2}
@@ -3274,6 +3278,10 @@ PrefabInstance:
       propertyPath: animationName
       value: Idle
       objectReference: {fileID: 0}
+    - target: {fileID: 7731546883605862567, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
+      propertyPath: initialSkinName
+      value: calico
+      objectReference: {fileID: 0}
     - target: {fileID: 7763679916836860633, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
       propertyPath: m_Name
       value: Spine GameObject (CatWalk)
@@ -3281,23 +3289,23 @@ PrefabInstance:
     - target: {fileID: 8048867451119059524, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
       propertyPath: Sit
       value: 
-      objectReference: {fileID: -7513619046051839827, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
+      objectReference: {fileID: 7427940375227580799, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
     - target: {fileID: 8048867451119059524, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
       propertyPath: Idle
       value: 
-      objectReference: {fileID: 2084849313929716479, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
+      objectReference: {fileID: 7460678818133451274, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
     - target: {fileID: 8048867451119059524, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
       propertyPath: Walk
       value: 
-      objectReference: {fileID: -868439704574916804, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
+      objectReference: {fileID: -3211370565266154352, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
     - target: {fileID: 8048867451119059524, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
       propertyPath: GetUp
       value: 
-      objectReference: {fileID: -4430035490075011313, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
+      objectReference: {fileID: -5831233527213312558, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
     - target: {fileID: 8048867451119059524, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
       propertyPath: Sitting
       value: 
-      objectReference: {fileID: 5965190544692127856, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
+      objectReference: {fileID: 6887593881455049368, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
     - target: {fileID: 8048867451119059524, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
       propertyPath: IsWalking
       value: 0

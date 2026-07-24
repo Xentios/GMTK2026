@@ -8,17 +8,16 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public Volume burnOutWarn;
-    [Obsolete]
-    public Volume demotivationWarn;
+
 
     public Vector2 randomRangeForDisturbanceLayer2;
     public float coolDownTimerForLayer2 = 10f;
     public Vector2 randomRangeForDisturbanceLayer3;
     public float coolDownTimerForLayer3 = 5f;
 
-    public float warningLimit = 0.7f;
+    public float warningLimit = 0.3f;
     public float barFillerSpeed = 1.0f;
-    public float burnOutFiller=1f;
+    public float burnOutFiller = 1f;
 
 
     public bool AnimationOnProgress;
@@ -29,7 +28,7 @@ public class GameManager : MonoBehaviour
     public GameEvent catPawEvent;
 
     [Obsolete]
-    public float DemotivationFiller=1f;
+    public float DemotivationFiller = 1f;
 
     private int CodeValue;
     private int AudioValue;
@@ -104,7 +103,7 @@ public class GameManager : MonoBehaviour
 
     public void RemoveBurnOut(float time)
     {
-        if (burnOutFiller<1)
+        if (burnOutFiller < 1)
         {
             burnOutFiller += time;
             burnOutFiller = Mathf.Max(0f, burnOutFiller);
