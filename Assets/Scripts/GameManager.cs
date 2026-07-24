@@ -30,6 +30,10 @@ public class GameManager : MonoBehaviour
     [Obsolete]
     public float DemotivationFiller;
 
+    private int CodeValue;
+    private int AudioValue;
+    private int ArtValue;
+
     void Awake()
     {
         if (instance != null)
@@ -94,5 +98,51 @@ public class GameManager : MonoBehaviour
         DemotivationFiller = Mathf.Min(0, burnOutFiller);
 
     }
+
+    public int GetThirdLayerValue(ItemType type)
+    {
+        int value = 0;
+        switch (type)
+        {
+            case ItemType.Code:
+            value = CodeValue;
+            break;
+            case ItemType.Art:
+            value = ArtValue;
+            break;
+            case ItemType.Audio:
+            value = AudioValue;
+            break;
+
+        }
+
+        return value;
+    }
+
+    public void SetThirdLayerValue(ItemType type, int newValue)
+    {
+        //int value = 0;
+        switch (type)
+        {
+            case ItemType.Code:
+            CodeValue += newValue;
+            CodeValue = Math.Max(0, CodeValue);
+            CodeValue = Math.Min(100, CodeValue);
+            break;
+            case ItemType.Art:
+            ArtValue += newValue;
+            ArtValue = Math.Max(0, ArtValue);
+            ArtValue = Math.Min(100, ArtValue);
+            break;
+            case ItemType.Audio:
+            AudioValue += newValue;
+            AudioValue = Math.Max(0, AudioValue);
+            AudioValue = Math.Min(100, AudioValue);
+            break;
+
+        }
+
+    }
+
 
 }

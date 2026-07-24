@@ -47,7 +47,7 @@ public class DragManager : MonoBehaviour
             currentItem.EndDrag();
             if (dragArea.bounds.Contains(currentItem.transform.position))
             {
-                Debug.Log("inside");
+                GameManager.instance.SetThirdLayerValue(currentItem.GetMyItem().ItemType, currentItem.GetMyItem().value);
             }
             currentItem = null;
         }

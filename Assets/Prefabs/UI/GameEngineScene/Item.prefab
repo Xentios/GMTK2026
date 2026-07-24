@@ -136,7 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   startSpeed: 1
-  scaleReducer: 0.7
+  scaleReducer: 0.55
+  value: 10
 --- !u!114 &8542085997070608502
 MonoBehaviour:
   m_ObjectHideFlags: 0

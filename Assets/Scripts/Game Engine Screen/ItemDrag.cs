@@ -23,4 +23,6 @@ public class ItemDrag : MonoBehaviour
         IsDragging = false;
         item.EndDrag();
     }
+
+    public Item GetMyItem() { return item; }
 }

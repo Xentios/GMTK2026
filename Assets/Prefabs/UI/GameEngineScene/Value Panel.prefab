@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 5019985457630303890}
   - component: {fileID: 3855614794803920071}
   - component: {fileID: 5345199293714015073}
+  - component: {fileID: 954885551314502610}
   m_Layer: 5
   m_Name: Value Panel
   m_TagString: Untagged
@@ -179,6 +180,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &954885551314502610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106362431736075964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57da50b20e3deb445998535aa0b83253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GetAssetValues
+  itemType: 0
+  textMeshPro: {fileID: 5134901530477565848}
 --- !u!1 &8619206094776621734
 GameObject:
   m_ObjectHideFlags: 0
