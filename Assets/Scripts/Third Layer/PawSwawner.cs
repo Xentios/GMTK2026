@@ -29,6 +29,14 @@ public class PawSwawner : MonoBehaviour
 
     private void CleanUp()
     {
+
+
+        for (var i = dragManager.dragedItems.Count - 1; i >= 0; i--)
+        {
+            if (dragManager.dragedItems[i] == null)
+                dragManager.dragedItems.RemoveAt(i);
+        }
+
         if (dragManager.dragedItems.Count > 0)
         {
             var item = dragManager.dragedItems[Random.Range(0, dragManager.dragedItems.Count)];
