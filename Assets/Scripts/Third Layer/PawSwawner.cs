@@ -11,6 +11,8 @@ public class PawSwawner : MonoBehaviour
 
     public Transform dragArea;
 
+    public DragManager dragManager;
+
     public void PawnSpawn()
     {
         spriteRenderer.sprite = pawns[Random.Range(0, pawns.Count)];
@@ -22,10 +24,20 @@ public class PawSwawner : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         pawHolder.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 90));
         pawHolder.transform.DOMove(target, 0.4f).OnComplete(CleanUp);
+
     }
 
     private void CleanUp()
     {
+        if (dragManager.dragedItems.Count > 0)
+        {
+            var item = dragManager.dragedItems[Random.Range(0, dragManager.dragedItems.Count)];
+            dragManager.dragedItems.Remove(item);
+            item.GetMyItem().FireTowardsRight();
+            GameManager.instance.SetThirdLayerValue(item.GetMyItem().ItemType, -1 * item.GetMyItem().value);
+
+        }
+
         pawHolder.transform.DOBlendableMoveBy(Vector3.down * 10, 1f);
         //spriteRenderer.transform.position = Vector3.right * 30;
     }

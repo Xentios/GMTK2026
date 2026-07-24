@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,8 @@ public class DragManager : MonoBehaviour
     private ItemDrag currentItem;
 
     public BoxCollider2D dragArea;
+
+    public List<ItemDrag> dragedItems;
     private void Awake()
     {
         cam = Camera.main;
@@ -47,7 +50,8 @@ public class DragManager : MonoBehaviour
             currentItem.EndDrag();
             if (dragArea.bounds.Contains(currentItem.transform.position))
             {
-                GameManager.instance.SetThirdLayerValue(currentItem.GetMyItem().ItemType, currentItem.GetMyItem().value);
+                GameManager.instance?.SetThirdLayerValue(currentItem.GetMyItem().ItemType, currentItem.GetMyItem().value);
+                dragedItems.Add(currentItem);
             }
             currentItem = null;
         }

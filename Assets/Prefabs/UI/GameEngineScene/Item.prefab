@@ -138,6 +138,7 @@ MonoBehaviour:
   startSpeed: 1
   scaleReducer: 0.55
   value: 10
+  force: 10000
 --- !u!114 &8542085997070608502
 MonoBehaviour:
   m_ObjectHideFlags: 0
