@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public float coolDownTimerForLayer3 = 5f;
 
     public float warningLimit = 0.3f;
-    public float barFillerSpeed = 1.0f;
+    public float barFillerSpeed = 3.0f;
     public float burnOutFiller = 1f;
 
 
