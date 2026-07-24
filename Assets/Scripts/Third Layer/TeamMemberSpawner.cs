@@ -11,6 +11,7 @@ public class TeamMemberSpawner : MonoBehaviour
 
     [SerializeField] private float spawnInterval = 5f;
     [SerializeField] private float firstDelay = 10f;
+    [SerializeField] private float spawnIntervalModifier = 1f;
 
     public BoxCollider2D spawnCollider;
 
@@ -27,7 +28,14 @@ public class TeamMemberSpawner : MonoBehaviour
 
         while (true)
         {
-            yield return new WaitForSeconds(spawnInterval * 1f);
+            spawnIntervalModifier = 1f;
+
+            if (GameManager.instance != null && GameManager.instance.DemotivationFiller < 0.1f)
+            {
+                spawnIntervalModifier = 0.2f;
+            }
+
+            yield return new WaitForSeconds(spawnInterval * spawnIntervalModifier);
             SpawnItem();
         }
     }

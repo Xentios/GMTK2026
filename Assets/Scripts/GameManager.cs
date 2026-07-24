@@ -27,7 +27,6 @@ public class GameManager : MonoBehaviour
     public GameEvent makeCatWalk;
     public GameEvent catPawEvent;
 
-    [Obsolete]
     public float DemotivationFiller = 1f;
 
     private int CodeValue;
