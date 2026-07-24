@@ -6,7 +6,7 @@ public class TeamMemberSpawner : MonoBehaviour
 {
     public GameObject teamMemberPrefab;
 
-    [SerializeField] private float spawnInterval = 2f;
+    [SerializeField] private float spawnInterval = 5f;
     [SerializeField] private float firstDelay = 10f;
 
     public BoxCollider2D spawnCollider;
