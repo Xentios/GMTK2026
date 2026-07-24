@@ -1,0 +1,19 @@
+face.png
+size:2048,1024
+filter:Linear,Linear
+Layer 13
+bounds:2,2,747,923
+offsets:2,2,751,927
+Layer 13 Copy 4
+bounds:751,3,394,180
+offsets:2,2,398,184
+Layer 13 Copy 5
+bounds:751,526,630,399
+offsets:1,1,632,401
+Layer 13 Copy 6
+bounds:1383,772,610,153
+offsets:1,1,613,155
+Layer 15 Copy
+bounds:751,185,339,539
+offsets:1,1,342,541
+rotate:90
