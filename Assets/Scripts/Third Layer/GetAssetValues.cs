@@ -12,7 +12,7 @@ public class GetAssetValues : MonoBehaviour
         if (GameManager.instance == null) return;
 
         var value = GameManager.instance.GetThirdLayerValue(itemType);
-        textMeshPro.text = value.ToString();
+        textMeshPro.text = value.ToString() + "/100";
     }
 
 }
