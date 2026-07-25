@@ -17,11 +17,13 @@ public class GetAssetValues : MonoBehaviour
         if (GameManager.instance == null) return;
 
         oldValue = GameManager.instance.GetThirdLayerValue(itemType);
+
     }
 
     private void Start()
     {
         fillBar.fillAmount = ((float) oldValue / 100f);
+        textMeshPro.text = oldValue + "/100";
     }
 
     private void Update()
@@ -40,6 +42,7 @@ public class GetAssetValues : MonoBehaviour
 
         oldValue = value;
         //fillBar.fillAmount = ((float) value / 100f);
+        textMeshPro.text = oldValue + "/100";
         float fillvalue = (float) value / 100f;
         fillBar.DOFillAmount(fillvalue, fillDelay);
     }
