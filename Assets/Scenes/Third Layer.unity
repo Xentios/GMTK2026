@@ -453,7 +453,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9ded6ec2d230be640860710e5e21d467, type: 3}
   - {fileID: 8300000, guid: 20cb35ba67d946749ba136fa94fc6f20, type: 3}
   spawnInterval: 4
-  firstDelay: 1
+  firstDelay: 7
   spawnIntervalModifier: 1
   spawnCollider: {fileID: 199674324}
 --- !u!4 &159193432
