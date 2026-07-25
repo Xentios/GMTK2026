@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ed355d76b17cd484ea612c9561b34d53
+guid: d5060798c555a324484e130328073de4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 329345113962456717
-    second: HappinesBar_0
+      213: -5049807670441734654
+    second: HappinessBarEmpty_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,10 +100,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HappinesBar_0
+      name: HappinessBarEmpty_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
         width: 1548
         height: 60
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d862e3ed2a1129400800000000000000
-      internalID: 329345113962456717
+      spriteID: 20e0743cdaa7be9b0800000000000000
+      internalID: -5049807670441734654
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 937fe74c0a7b36c47b01c7f155412e8b
+    spriteID: fdbf921586677f447a2bae69fb70d4ee
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +137,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      HappinesBar_0: 329345113962456717
+      HappinessBarEmpty_0: -5049807670441734654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

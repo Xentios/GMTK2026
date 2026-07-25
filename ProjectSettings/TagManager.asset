@@ -47,6 +47,9 @@ TagManager:
   - name: Items
     uniqueID: 3877731441
     locked: 0
+  - name: bar
+    uniqueID: 4172832355
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
