@@ -20,6 +20,7 @@ public class DropContainer : MonoBehaviour
 
     public static float _speed;
 
+    public bool testFlag = false;
     private void Start()
     {
         StartCoroutine(SpawnLoop());
@@ -56,7 +57,7 @@ public class DropContainer : MonoBehaviour
             Quaternion.identity
         );
 
-        newItem.Initialize(randomItem);
+        newItem.Initialize(randomItem, testFlag);
 
         //Debug.Log("Speed: " + _speed);
         //Debug.Log("Spawn Interval: " + (spawnInterval / (1f + (_speed * 0.3f))));
