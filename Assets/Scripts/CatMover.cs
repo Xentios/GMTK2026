@@ -15,6 +15,9 @@ public class CatMover : MonoBehaviour
 
     private Collider2D catColllider;
 
+    [SerializeField]
+    private GameObject blockerObject;
+
     public SkeletonRenderer skeletonRenderer;
     public SkeletonAnimation skeletonRendererAnim;
 
@@ -37,6 +40,8 @@ public class CatMover : MonoBehaviour
         skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
         catPos = transform.localPosition;
         catColllider = GetComponent<Collider2D>();
+        blockerObject.SetActive(true);
+
         StartCoroutine(CheckIfSitting());
         StartCoroutine(WalkingStarted());
     }
@@ -46,6 +51,7 @@ public class CatMover : MonoBehaviour
     {
         while (isSitting==false)
         {
+            
             //Walking based on the cat's direction.
             Vector2 newPosition = transform.position;
             if (skeletonRenderer.initialFlipX == false)
@@ -57,7 +63,7 @@ public class CatMover : MonoBehaviour
             catPos = newPosition;
 
             //If the cat is not on the screen, stops the animation and the cat, flips the cat to get it ready for the next event
-            if (catPos.x >= 21 && directionFlip==false) 
+            if (catPos.x >= 19 && directionFlip==false) 
             {
                 IsWalking = false;
                 skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, false);
@@ -70,6 +76,7 @@ public class CatMover : MonoBehaviour
                 transform.eulerAngles = new Vector3 (0, -180, 0);
                 directionFlip = true;
                 isLooping = true;
+                speed = 2;
                 yield break;
             }
             else if (catPos.x <=-17 && directionFlip==true)
@@ -86,6 +93,7 @@ public class CatMover : MonoBehaviour
                 transform.eulerAngles = new Vector3 (0, -0, 0);
                 directionFlip = false;
                 isLooping = true;
+                speed = 2;
                 yield break;
             }
             yield return null;
@@ -130,12 +138,15 @@ public class CatMover : MonoBehaviour
 
                 if (catColllider.OverlapPoint(mousePos))
                 {
-                        skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, false);
-                        skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
-                        isSitting = false;
-                        hitCount = 0;
-                        StartCoroutine(WalkingStarted());
-                        yield break;
+
+                    skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, false);
+                    skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
+                    isSitting = false;
+                    hitCount = 0;
+                    blockerObject.SetActive(false);
+                    speed = 4;
+                    StartCoroutine(WalkingStarted());
+                    yield break;
                 }
             }
             yield return null;
