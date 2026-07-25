@@ -14,7 +14,6 @@ public class CatMover : MonoBehaviour
     public bool IsWalking;
 
     private Collider2D catColllider;
-    private Camera mainCam;
 
     public SkeletonRenderer skeletonRenderer;
     public SkeletonAnimation skeletonRendererAnim;
@@ -37,7 +36,6 @@ public class CatMover : MonoBehaviour
         IsWalking = true;
         skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
         catPos = transform.localPosition;
-        mainCam = GetComponent<Camera>();
         catColllider = GetComponent<Collider2D>();
         StartCoroutine(CheckIfSitting());
         StartCoroutine(WalkingStarted());
@@ -52,8 +50,7 @@ public class CatMover : MonoBehaviour
             Vector2 newPosition = transform.position;
             if (skeletonRenderer.initialFlipX == false)
                 newPosition.x += direction.x * speed * Time.deltaTime;
-
-            if (skeletonRenderer.initialFlipX == true)
+            else if (skeletonRenderer.initialFlipX == true)
                 newPosition.x -= direction.x * speed * Time.deltaTime;
 
             transform.position = newPosition;
@@ -63,7 +60,6 @@ public class CatMover : MonoBehaviour
             if (catPos.x >= 21 && directionFlip==false) 
             {
                 IsWalking = false;
-
                 skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, false);
 
                 if (skeletonRenderer.initialFlipX == false)
@@ -126,28 +122,32 @@ public class CatMover : MonoBehaviour
         skeletonRendererAnim.AnimationState.SetAnimation(0, Sit, false);
         skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, true);
 
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        while (true)
         {
-            Vector2 mousePos = mainCam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            Debug.Log("ife girdi");
-
-            if (catColllider.OverlapPoint(mousePos))
+            if (Mouse.current.leftButton.wasPressedThisFrame)
             {
-                hitCount++;
-                Debug.Log($"hitted {hitCount}");
+                Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
-                if (hitCount>=10)
+                if (catColllider.OverlapPoint(mousePos))
                 {
-                    Debug.Log($"hitted {hitCount} times!!!");
-                    skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, false);
-                    skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
-                    isSitting = false;
-                    StartCoroutine(WalkingStarted());
-                    yield break;
+                    hitCount++;
+                    Debug.Log($"hitted {hitCount}");
+
+                    if (hitCount >= 10)
+                    {
+                        Debug.Log($"hitted {hitCount} times!!!");
+                        skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, false);
+                        skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
+                        isSitting = false;
+                        hitCount = 0;
+                        StartCoroutine(WalkingStarted());
+                        yield break;
+                    }
                 }
             }
+            yield return null;
         }
-        yield return null;
+        
     }
 
     public void StartSitDown()
