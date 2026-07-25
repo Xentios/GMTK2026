@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     public float DemotivationFiller = 1f;
 
+
+    public GameEvent Layer3GameValuesChanged;
     private int CodeValue;
     private int AudioValue;
     private int ArtValue;
@@ -164,6 +166,8 @@ public class GameManager : MonoBehaviour
             break;
 
         }
+
+        Layer3GameValuesChanged.TriggerEvent();
 
     }
 

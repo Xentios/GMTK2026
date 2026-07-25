@@ -55,7 +55,7 @@ public class Item : MonoBehaviour
         rb.linearVelocity = Vector2.down * GameEngineManager.Instance.CurrentFallSpeed;
     }
 
-    public void Initialize(ItemInfo info)
+    public void Initialize(ItemInfo info, bool test)//TODO SO BAD
     {
         ItemType = info.type;
 
@@ -63,6 +63,14 @@ public class Item : MonoBehaviour
 
         spriteRenderer.sprite = info.sprites[randomSprite];
         gameObject.AddComponent<PolygonCollider2D>();
+        if (test)
+        {
+            rb.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
+            //rb.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+            //rb.gameObject.GetComponent<BoxCollider2D>().enabled = true;
+            //rb.gameObject.GetComponent<CircleCollider2D>().enabled = true;
+            //Circle collider helps a lot.
+        }
     }
 
 
@@ -89,6 +97,7 @@ public class Item : MonoBehaviour
     public void ScaleDownAfterSuccessDrag()
     {
         transform.localScale = Vector2.one * scaleReducer;
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
         rb.excludeLayers = LayerMask.GetMask("AreaTopLayer");
     }
 

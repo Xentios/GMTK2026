@@ -34,7 +34,10 @@ public class ShowTotalSeconds : MonoBehaviour
 
     IEnumerator PlayAnimator(float time)
     {
+        if (secondsTMPAnimator.enabled == enabled) yield break;
+
         secondsTMPAnimator.enabled = true;
+
         yield return new WaitForSeconds(time);
         secondsTMPAnimator.enabled = false;
 

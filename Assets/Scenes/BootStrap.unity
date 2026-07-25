@@ -401,6 +401,7 @@ MonoBehaviour:
   makeCatWalk: {fileID: 11400000, guid: fcd6e8241a63545408e8cef6a29c6262, type: 2}
   catPawEvent: {fileID: 11400000, guid: fe7e6c4302f85c648a9783be09cf54eb, type: 2}
   DemotivationFiller: 1
+  Layer3GameValuesChanged: {fileID: 11400000, guid: c516f808360138546a6f8c00f69b8c06, type: 2}
   DidWeVisitLayer2: 0
 --- !u!1 &449396101
 GameObject:
@@ -1198,6 +1199,7 @@ Transform:
   - {fileID: 1064360692}
   - {fileID: 439978129}
   - {fileID: 798744236}
+  - {fileID: 1716263522}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &936442961
@@ -1341,6 +1343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de713a2bd243fa54aa0b87d18fd5982c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GeneralTimer
+  gameOverEvent: {fileID: 11400000, guid: 3adbd2972fe90c546a51b1805a5e3e52, type: 2}
   ShowDebug: 0
 --- !u!1 &1246785967
 GameObject:
@@ -1828,6 +1831,123 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 918065397784096170, guid: 2f466d8d3d7b7204ca8bb23791c625eb, type: 3}
   m_PrefabInstance: {fileID: 7090296268731229878}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1716263521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1716263522}
+  - component: {fileID: 1716263524}
+  - component: {fileID: 1716263523}
+  - component: {fileID: 1716263525}
+  m_Layer: 0
+  m_Name: GameEndingsHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1716263522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716263521}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 936442960}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1716263523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716263521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4775f4fefca58bb40aed761e3a17b412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  rootBootstrap: {fileID: 936442958}
+  GameLostSceneName: BadEndingScene
+  GameWonSceneName: GoodEndingScene
+--- !u!114 &1716263524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716263521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae47eee56886e74daa9d497a2cc4ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: 3adbd2972fe90c546a51b1805a5e3e52, type: 2}
+  onEventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1716263523}
+        m_TargetAssemblyTypeName: GameFinish, Assembly-CSharp
+        m_MethodName: TriggerGameLost
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onEventTriggeredWithParameter:
+    m_PersistentCalls:
+      m_Calls: []
+  onEventTriggeredWithParameterInt:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1716263525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716263521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae47eee56886e74daa9d497a2cc4ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: ed9060182e5898643bcf606a6b6bc4c5, type: 2}
+  onEventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1716263523}
+        m_TargetAssemblyTypeName: GameFinish, Assembly-CSharp
+        m_MethodName: TriggerGameWin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onEventTriggeredWithParameter:
+    m_PersistentCalls:
+      m_Calls: []
+  onEventTriggeredWithParameterInt:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1734682164 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5647519655162845038, guid: 776b660eecf02634d8fa759c3a223da4, type: 3}
