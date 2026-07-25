@@ -129,6 +129,7 @@ public class CatMover : MonoBehaviour
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector2 mousePos = mainCam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            Debug.Log("ife girdi");
 
             if (catColllider.OverlapPoint(mousePos))
             {
