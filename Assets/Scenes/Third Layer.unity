@@ -3948,6 +3948,7 @@ MonoBehaviour:
   threshHold: 10000
   secondsFlashDuration: 1.2
   secondsTMPAnimator: {fileID: 4501368446068313717}
+  secondsTextTMPAnimator: {fileID: 2958517132004823750}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

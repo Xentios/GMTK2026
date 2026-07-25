@@ -6,11 +6,12 @@ using UnityEngine;
 public class ShowTotalSeconds : MonoBehaviour
 {
     public TextMeshProUGUI secondsTextField;
-    public double threshHold;
+    public double threshHold = 10000;
 
 
-    public float secondsFlashDuration = 1f;
+    public float secondsFlashDuration = 1.2f;
     public TMPAnimator secondsTMPAnimator;
+    public TMPAnimator secondsTextTMPAnimator;
 
     private void Update()
     {
@@ -21,7 +22,7 @@ public class ShowTotalSeconds : MonoBehaviour
 
         if (totalSeconds < threshHold)
         {
-            //secondsTMPAnimator.enabled = true;
+            secondsTextTMPAnimator.enabled = true;
         }
     }
 
