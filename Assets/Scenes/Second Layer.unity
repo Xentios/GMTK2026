@@ -3169,7 +3169,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1544299703}
   - component: {fileID: 1544299702}
-  - component: {fileID: 1544299704}
   m_Layer: 0
   m_Name: DistractEvent
   m_TagString: Untagged
@@ -3193,7 +3192,7 @@ MonoBehaviour:
   onEventTriggered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1649782871}
+      - m_Target: {fileID: 1649782878}
         m_TargetAssemblyTypeName: CatMover, Assembly-CSharp
         m_MethodName: StartWalking
         m_Mode: 1
@@ -3226,30 +3225,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1544299704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544299701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9fae9932f27344ea416de7f356d83c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CatMover
-  speed: 0
-  direction: {x: 0, y: 0}
-  IsWalking: 0
-  skeletonRenderer: {fileID: 0}
-  skeletonRendererAnim: {fileID: 0}
-  Walk: {fileID: 0}
-  Sit: {fileID: 0}
-  Sitting: {fileID: 0}
-  GetUp: {fileID: 0}
-  Idle: {fileID: 0}
-  catPos: {x: 0, y: 0}
-  isSitting: 0
 --- !u!1 &1563981165
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,13 +3691,17 @@ PrefabInstance:
       propertyPath: skeletonRendererAnim
       value: 
       objectReference: {fileID: 1649782869}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8048867451119059524, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7763679916836860633, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1649782872}
+      addedObject: {fileID: 1649782878}
+    - targetCorrespondingSourceObject: {fileID: 7763679916836860633, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1649782877}
   m_SourcePrefab: {fileID: 100100000, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
 --- !u!114 &1649782869 stripped
 MonoBehaviour:
@@ -3740,18 +3719,64 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7763679916836860633, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
   m_PrefabInstance: {fileID: 1649782868}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1649782871 stripped
+--- !u!114 &1649782873 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8048867451119059524, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7731546883605862567, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
   m_PrefabInstance: {fileID: 1649782868}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649782870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9fae9932f27344ea416de7f356d83c, type: 3}
+  m_Script: {fileID: 11500000, guid: e075b9a3e08e2f74fbd651c858ab16ed, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CatMover
---- !u!114 &1649782872
+  m_EditorClassIdentifier: spine-unity::Spine.Unity.SkeletonRenderer
+--- !u!61 &1649782877
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649782870}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.52302456, y: 1.9899386}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 11.674888, y: 4.651009}
+  m_EdgeRadius: 0
+--- !u!114 &1649782878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3760,31 +3785,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1649782870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ae47eee56886e74daa9d497a2cc4ba8, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a9fae9932f27344ea416de7f356d83c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
-  gameEvent: {fileID: 11400000, guid: ed9060182e5898643bcf606a6b6bc4c5, type: 2}
-  onEventTriggered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1649782871}
-        m_TargetAssemblyTypeName: CatMover, Assembly-CSharp
-        m_MethodName: StartSitDown
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onEventTriggeredWithParameter:
-    m_PersistentCalls:
-      m_Calls: []
-  onEventTriggeredWithParameterInt:
-    m_PersistentCalls:
-      m_Calls: []
+  m_EditorClassIdentifier: Assembly-CSharp::CatMover
+  speed: 1
+  direction: {x: 1, y: 0}
+  IsWalking: 0
+  skeletonRenderer: {fileID: 1649782873}
+  skeletonRendererAnim: {fileID: 1649782869}
+  Walk: {fileID: -3211370565266154352, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
+  Sit: {fileID: 7427940375227580799, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
+  Sitting: {fileID: 6887593881455049368, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
+  GetUp: {fileID: -5831233527213312558, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
+  Idle: {fileID: 7460678818133451274, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
+  catPos: {x: 0, y: 0}
+  isSitting: 0
 --- !u!1 &1723044030
 GameObject:
   m_ObjectHideFlags: 0

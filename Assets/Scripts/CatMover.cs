@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
 using DG.Tweening;
+using UnityEngine.InputSystem;
 
 public class CatMover : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class CatMover : MonoBehaviour
     public Vector2 direction;
 
     public bool IsWalking;
+
+    private Collider2D catColllider;
+    private Camera mainCam;
 
     public SkeletonRenderer skeletonRenderer;
     public SkeletonAnimation skeletonRendererAnim;
@@ -26,11 +30,15 @@ public class CatMover : MonoBehaviour
     private bool isLooping = true;
     private bool directionFlip = false;
 
+    private int hitCount;
+
     public void StartWalking()
     {
         IsWalking = true;
         skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
         catPos = transform.localPosition;
+        mainCam = GetComponent<Camera>();
+        catColllider = GetComponent<Collider2D>();
         StartCoroutine(CheckIfSitting());
         StartCoroutine(WalkingStarted());
     }
@@ -118,12 +126,27 @@ public class CatMover : MonoBehaviour
         skeletonRendererAnim.AnimationState.SetAnimation(0, Sit, false);
         skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, true);
 
-        yield return new WaitForSeconds(2);
-        skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, false);
-        skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
-        isSitting = false;
-        StartCoroutine(WalkingStarted());
-        yield break;
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            Vector2 mousePos = mainCam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+
+            if (catColllider.OverlapPoint(mousePos))
+            {
+                hitCount++;
+                Debug.Log($"hitted {hitCount}");
+
+                if (hitCount>=10)
+                {
+                    Debug.Log($"hitted {hitCount} times!!!");
+                    skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, false);
+                    skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
+                    isSitting = false;
+                    StartCoroutine(WalkingStarted());
+                    yield break;
+                }
+            }
+        }
+        yield return null;
     }
 
     public void StartSitDown()
