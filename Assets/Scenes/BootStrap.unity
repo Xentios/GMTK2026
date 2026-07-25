@@ -390,8 +390,10 @@ MonoBehaviour:
   burnOutWarn: {fileID: 439978131}
   randomRangeForDisturbanceLayer2: {x: 0.1, y: 0.2}
   coolDownTimerForLayer2: 10
+  coolDownTimerForLayer2Reset: 20
   randomRangeForDisturbanceLayer3: {x: 0.1, y: 0.7}
   coolDownTimerForLayer3: 5
+  coolDownTimerForLayer3Reset: 5
   warningLimit: 0.7
   barFillerSpeed: 0.006
   burnOutFiller: 1

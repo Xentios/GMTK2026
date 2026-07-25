@@ -12,8 +12,10 @@ public class GameManager : MonoBehaviour
 
     public Vector2 randomRangeForDisturbanceLayer2;
     public float coolDownTimerForLayer2 = 10f;
+    public float coolDownTimerForLayer2Reset = 20f;
     public Vector2 randomRangeForDisturbanceLayer3;
     public float coolDownTimerForLayer3 = 5f;
+    public float coolDownTimerForLayer3Reset = 5f;
 
     public float warningLimit = 0.3f;
     public float barFillerSpeed = 3.0f;
@@ -86,7 +88,7 @@ public class GameManager : MonoBehaviour
             {
                 Leve2LayerDisturbanceCalled = true;
                 makeCatWalk.TriggerEvent();
-                coolDownTimerForLayer2 = 10f;
+                coolDownTimerForLayer2 = coolDownTimerForLayer2Reset;
             }
         }
 
@@ -96,7 +98,7 @@ public class GameManager : MonoBehaviour
             {
                 Leve3LayerDisturbanceCalled = true;
                 catPawEvent.TriggerEvent();
-                coolDownTimerForLayer3 = 5f;
+                coolDownTimerForLayer3 = coolDownTimerForLayer3Reset;
             }
         }
 
