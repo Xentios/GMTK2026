@@ -19,26 +19,27 @@ public class ItemDrag : MonoBehaviour
         defaultScale = item.gameObject.transform.localScale;
 
     }
-    void OnEnable()
-    {
-        //  mouseClick.action.performed += ClickMouse;
-        mousePosition.action.performed += checkMousePos;
-    }
+    //void OnEnable()
+    //{
+    //    //  mouseClick.action.performed += ClickMouse;
+    //    mousePosition.action.performed += checkMousePos;
+    //}
 
-    void OnDisable()
-    {
-        //mouseClick.action.performed -= ClickMouse;
-        mousePosition.action.performed -= checkMousePos;
-    }
+    //void OnDisable()
+    //{
+    //    //mouseClick.action.performed -= ClickMouse;
+    //    mousePosition.action.performed -= checkMousePos;
+    //}
 
     private void Start()
     {
         collider = item.gameObject.GetComponent<PolygonCollider2D>();
     }
-
-    private void checkMousePos(InputAction.CallbackContext context)
+    private void Update()
     {
-        var mousePos = context.ReadValue<Vector2>();
+        if (collider == null) return;
+
+        var mousePos = mousePosition.action.ReadValue<Vector2>();
         var worldPos = Camera.main.ScreenToWorldPoint(mousePos);
         worldPos.z = 0;
         if (collider.bounds.Contains(worldPos) == true)
@@ -50,6 +51,11 @@ public class ItemDrag : MonoBehaviour
             transform.localScale = defaultScale;
         }
     }
+
+    //private void checkMousePos(InputAction.CallbackContext context)
+    //{
+
+    //}
 
     public void BeginDrag()
     {

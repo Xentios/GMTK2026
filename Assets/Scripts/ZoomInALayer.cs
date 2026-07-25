@@ -40,7 +40,7 @@ public class ZoomInALayer : MonoBehaviour
     private void ChangeLevel()
     {
         var sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        if (sceneIndex == 2) GameManager.instance?.SetVisitLevel2();
+        if (sceneIndex == 3) GameManager.instance?.SetVisitLevel2();
         SceneManager.LoadSceneAsync(sceneIndex);
         DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 0f, 0.3f).OnComplete(() => GameManager.instance.AnimationOnProgress = false);
     }

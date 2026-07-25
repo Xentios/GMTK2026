@@ -116,7 +116,7 @@ public class BootStrapScript : MonoBehaviour
         startButton.SetActive(true);
         conButton.SetActive(false);
         gameOver = false;
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 
     public void OpenGameOverPanel()
