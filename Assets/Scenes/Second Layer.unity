@@ -571,6 +571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42f9a4310eba25344a161c40a81504f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShowMotivationFiller
+  MotivationFillImageLeft: {fileID: 1044014530}
+  MotivationFillImageRight: {fileID: 2090364294}
   WarningFlashLimit: 0.3
 --- !u!1 &394980517
 GameObject:
@@ -2334,7 +2336,6 @@ GameObject:
   - component: {fileID: 1044014529}
   - component: {fileID: 1044014531}
   - component: {fileID: 1044014530}
-  - component: {fileID: 1044014532}
   m_Layer: 5
   m_Name: HappinessBarLeft
   m_TagString: Untagged
@@ -2399,19 +2400,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044014528}
   m_CullTransparentMesh: 1
---- !u!114 &1044014532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044014528}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42f9a4310eba25344a161c40a81504f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShowMotivationFiller
-  WarningFlashLimit: 0.3
 --- !u!1 &1086856953
 GameObject:
   m_ObjectHideFlags: 0
@@ -4842,7 +4830,6 @@ GameObject:
   - component: {fileID: 2090364292}
   - component: {fileID: 2090364295}
   - component: {fileID: 2090364294}
-  - component: {fileID: 2090364293}
   m_Layer: 5
   m_Name: HappinessBarRight
   m_TagString: Untagged
@@ -4869,19 +4856,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1411, y: 9.099976}
   m_SizeDelta: {x: 775, y: 60}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &2090364293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2090364291}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42f9a4310eba25344a161c40a81504f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShowMotivationFiller
-  WarningFlashLimit: 0.3
 --- !u!114 &2090364294
 MonoBehaviour:
   m_ObjectHideFlags: 0
