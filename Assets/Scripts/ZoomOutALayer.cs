@@ -45,13 +45,13 @@ public class ZoomOutALayer : MonoBehaviour
         if (GameManager.instance.AnimationOnProgress == true) return;
 
         GameManager.instance.AnimationOnProgress = true;
-        if (SceneManager.GetActiveScene().buildIndex == 2)
-            StartCoroutine(RenderOneFrame(renderTextureCamForLayer1));
         if (SceneManager.GetActiveScene().buildIndex == 3)
+            StartCoroutine(RenderOneFrame(renderTextureCamForLayer1));
+        if (SceneManager.GetActiveScene().buildIndex == 4)
             StartCoroutine(RenderOneFrame(renderTextureCamForLayer2));
 
         //MaxLevel = SceneManager.GetActiveScene().name == Layer1SceneName;
-        MaxLevel = SceneManager.GetActiveScene().buildIndex == 1;
+        MaxLevel = SceneManager.GetActiveScene().buildIndex == 2;
         var offset = MaxLevel ? duration - 0.3f : 0f;
 
         postProcessEffects.weight = 0f;
