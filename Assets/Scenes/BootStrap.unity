@@ -1876,6 +1876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4775f4fefca58bb40aed761e3a17b412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  rootBootstrap: {fileID: 936442958}
   GameLostSceneName: BadEndingScene
 --- !u!114 &1716263524
 MonoBehaviour:
