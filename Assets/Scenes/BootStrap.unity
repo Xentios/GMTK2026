@@ -1842,6 +1842,7 @@ GameObject:
   - component: {fileID: 1716263522}
   - component: {fileID: 1716263524}
   - component: {fileID: 1716263523}
+  - component: {fileID: 1716263525}
   m_Layer: 0
   m_Name: GameEndingsHandler
   m_TagString: Untagged
@@ -1878,6 +1879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rootBootstrap: {fileID: 936442958}
   GameLostSceneName: BadEndingScene
+  GameWonSceneName: GoodEndingScene
 --- !u!114 &1716263524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1897,6 +1899,40 @@ MonoBehaviour:
       - m_Target: {fileID: 1716263523}
         m_TargetAssemblyTypeName: GameFinish, Assembly-CSharp
         m_MethodName: TriggerGameLost
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onEventTriggeredWithParameter:
+    m_PersistentCalls:
+      m_Calls: []
+  onEventTriggeredWithParameterInt:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1716263525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716263521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae47eee56886e74daa9d497a2cc4ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 11400000, guid: ed9060182e5898643bcf606a6b6bc4c5, type: 2}
+  onEventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1716263523}
+        m_TargetAssemblyTypeName: GameFinish, Assembly-CSharp
+        m_MethodName: TriggerGameWin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
