@@ -16,3 +16,7 @@ MonoBehaviour:
     _serializedList:
     - Key: RedPal
       Value: {fileID: 11400000, guid: 8e36679c9f1479647bd7a8afd1fac7a8, type: 2}
+    - Key: Grow2
+      Value: {fileID: 11400000, guid: 0ee1bd77403698c45bbdfa8579b0d35d, type: 2}
+    - Key: Grow
+      Value: {fileID: 11400000, guid: 30d2435db910b094bacfda24efefc008, type: 2}
