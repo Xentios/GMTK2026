@@ -1,6 +1,9 @@
 using Spine;
 using Spine.Unity;
 using UnityEngine;
+using System.Collections;
+using Unity.VisualScripting;
+using DG.Tweening;
 
 public class CatMover : MonoBehaviour
 {
@@ -17,37 +20,123 @@ public class CatMover : MonoBehaviour
     public AnimationReferenceAsset Sitting;
     public AnimationReferenceAsset GetUp;
     public AnimationReferenceAsset Idle;
-    void Update()
-    {
-        if (IsWalking == false) return;
-        // skeletonRendererAnim.
-        //skeletonRenderer.Animation=
-        //skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
-        Vector2 newPosition = transform.position;
-        newPosition.x += direction.x * speed * Time.deltaTime;
-        transform.position = newPosition;
-    }
+
+    public Vector2 catPos;
+    private bool isSitting=false;
+    private bool isLooping = true;
+    private bool directionFlip = false;
 
     public void StartWalking()
     {
         IsWalking = true;
         skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
+        catPos = transform.localPosition;
+        StartCoroutine(CheckIfSitting());
+        StartCoroutine(WalkingStarted());
+    }
+
+    // Walking coroutine
+    IEnumerator WalkingStarted()
+    {
+        while (isSitting==false)
+        {
+            //Walking based on the cat's direction.
+            Vector2 newPosition = transform.position;
+            if (skeletonRenderer.initialFlipX == false)
+                newPosition.x += direction.x * speed * Time.deltaTime;
+
+            if (skeletonRenderer.initialFlipX == true)
+                newPosition.x -= direction.x * speed * Time.deltaTime;
+
+            transform.position = newPosition;
+            catPos = newPosition;
+
+            //If the cat is not on the screen, stops the animation and the cat, flips the cat to get it ready for the next event
+            if (catPos.x >= 21 && directionFlip==false) 
+            {
+                IsWalking = false;
+
+                skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, false);
+
+                if (skeletonRenderer.initialFlipX == false)
+                    { skeletonRenderer.initialFlipX = true; }
+                else if (skeletonRenderer.initialFlipX == true)
+                    { skeletonRenderer.initialFlipX = false; }
+
+                transform.eulerAngles = new Vector3 (0, -180, 0);
+                directionFlip = true;
+                isLooping = true;
+                yield break;
+            }
+            else if (catPos.x <=-17 && directionFlip==true)
+            {
+                IsWalking = false;
+
+                skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, false);
+
+                if (skeletonRenderer.initialFlipX == false)
+                { skeletonRenderer.initialFlipX = true; }
+                else if (skeletonRenderer.initialFlipX == true)
+                { skeletonRenderer.initialFlipX = false; }
+
+                transform.eulerAngles = new Vector3 (0, -0, 0);
+                directionFlip = false;
+                isLooping = true;
+                yield break;
+            }
+            yield return null;
+        }
+        
+    }
+
+    // Checks if chat should sit
+    IEnumerator CheckIfSitting()
+    {
+        while (isLooping)
+        {
+            if (catPos.x >= 0.0 && catPos.x <= 0.9)
+            {
+                if (isSitting==false)
+                {
+                    
+                    StartCoroutine(SitForABit());
+                    isLooping = false;
+                    yield break;
+                }               
+            }
+            yield return null;
+        }
+    }
+
+    // Will change the coroutine to do something and stop the cat's sitting animation
+    // For now it's just waiting
+    IEnumerator SitForABit()
+    {
+        isSitting = true;
+        skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, false);
+        skeletonRendererAnim.AnimationState.SetAnimation(0, Sit, true);
+        skeletonRendererAnim.AnimationState.SetAnimation(0, Sit, false);
+        skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, true);
+
+        yield return new WaitForSeconds(2);
+        skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, false);
+        skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
+        isSitting = false;
+        StartCoroutine(WalkingStarted());
+        yield break;
     }
 
     public void StartSitDown()
     {
-        IsWalking = false;
-        var end = skeletonRendererAnim.AnimationState.SetAnimation(0, Sit, false).AnimationEnd;
-        skeletonRendererAnim.AnimationState.AddAnimation(0, Sitting, true, Sitting.Animation.Duration);
+        
     }
 
     private void SitDown(TrackEntry trackEntry)
-    {
-        skeletonRendererAnim.AnimationState.SetAnimation(0, Sit, true);
+    {        
     }
 
     public void SitDown()
     {
-
+        
     }
 }
