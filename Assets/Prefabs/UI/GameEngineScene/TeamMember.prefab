@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3187999404508400111}
   - component: {fileID: 8129334685925314333}
   - component: {fileID: 9157641166494889922}
+  - component: {fileID: -5020199712172566842}
   m_Layer: 8
   m_Name: TeamMember
   m_TagString: Untagged
@@ -348,3 +349,17 @@ MonoBehaviour:
   addNormalsDeprecated: 0
   calculateTangentsDeprecated: 0
   maskInteractionDeprecated: 0
+--- !u!114 &-5020199712172566842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865953221020478599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34072a67b1500aa44bb5dd489e4dc5b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OnTeamMemberClick
+  mouseClick: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  mousePosition: {fileID: -1654692200621890270, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
