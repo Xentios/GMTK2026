@@ -3941,7 +3941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a9fae9932f27344ea416de7f356d83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CatMover
-  speed: 1
+  speed: 2
   direction: {x: 1, y: 0}
   IsWalking: 0
   skeletonRenderer: {fileID: 1649782873}

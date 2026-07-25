@@ -130,19 +130,12 @@ public class CatMover : MonoBehaviour
 
                 if (catColllider.OverlapPoint(mousePos))
                 {
-                    hitCount++;
-                    Debug.Log($"hitted {hitCount}");
-
-                    if (hitCount >= 10)
-                    {
-                        Debug.Log($"hitted {hitCount} times!!!");
                         skeletonRendererAnim.AnimationState.SetAnimation(0, Sitting, false);
                         skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, true);
                         isSitting = false;
                         hitCount = 0;
                         StartCoroutine(WalkingStarted());
                         yield break;
-                    }
                 }
             }
             yield return null;
