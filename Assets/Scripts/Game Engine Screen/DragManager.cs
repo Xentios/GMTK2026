@@ -11,6 +11,8 @@ public class DragManager : MonoBehaviour
 
     public List<Item> dragedItems;
 
+    public ShowTotalSeconds ShowTotalSeconds;
+
     private Vector3 offset;
     private void Awake()
     {
@@ -54,7 +56,10 @@ public class DragManager : MonoBehaviour
             if (dragArea.bounds.Contains(currentItem.transform.position))
             {
                 GameManager.instance?.SetThirdLayerValue(currentItem.GetMyItem().ItemType, currentItem.GetMyItem().value);
+
                 GeneralTimer.instance?.RemoveTime(currentItem.GetMyItem().GetMyTimeCost());
+                ShowTotalSeconds.ActivateTimeDown();
+
                 dragedItems.Add(currentItem.GetMyItem());
                 currentItem.GetMyItem().ScaleDownAfterSuccessDrag();
                 Destroy(currentItem);

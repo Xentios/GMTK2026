@@ -1,4 +1,4 @@
-using DG.Tweening;
+using System.Collections;
 using TMPEffects.Components;
 using TMPro;
 using UnityEngine;
@@ -9,8 +9,8 @@ public class ShowTotalSeconds : MonoBehaviour
     public double threshHold;
 
 
-    public float duration = 1f;
-    public TMPAnimator TMPAnimator;
+    public float secondsFlashDuration = 1f;
+    public TMPAnimator secondsTMPAnimator;
 
     private void Update()
     {
@@ -21,12 +21,21 @@ public class ShowTotalSeconds : MonoBehaviour
 
         if (totalSeconds < threshHold)
         {
-            TMPAnimator.enabled = true;
+            //secondsTMPAnimator.enabled = true;
         }
     }
 
     public void ActivateTimeDown()
     {
-        secondsTextField.DOBlendableColor(Color.red, duration).SetLoops(2, LoopType.Yoyo);
+        //secondsTextField.DOBlendableColor(Color.red, secondsFlashDuration).SetLoops(2, LoopType.Yoyo);
+        StartCoroutine(PlayAnimator(secondsFlashDuration));
+    }
+
+    IEnumerator PlayAnimator(float time)
+    {
+        secondsTMPAnimator.enabled = true;
+        yield return new WaitForSeconds(time);
+        secondsTMPAnimator.enabled = false;
+
     }
 }

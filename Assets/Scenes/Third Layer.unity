@@ -2169,6 +2169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragManager
   dragArea: {fileID: 1939334734}
   dragedItems: []
+  ShowTotalSeconds: {fileID: 8813330210760315048}
 --- !u!4 &1380578345
 Transform:
   m_ObjectHideFlags: 0
@@ -3260,8 +3261,9 @@ GameObject:
   - component: {fileID: 8813330210760315047}
   - component: {fileID: 8770537372284831184}
   - component: {fileID: 8813330210760315048}
+  - component: {fileID: 8813330210760315049}
   m_Layer: 5
-  m_Name: Text Panel
+  m_Name: "T\u0131me Text Panel"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3557,12 +3559,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287903629940398160}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64cc8a40f9848a54c94bf232155b0b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: TMPEffects::TMPEffects.Components.TMPAnimator
-  database: {fileID: 0}
+  database: {fileID: 11400000, guid: 3f8741038a8acd941a4a6ade04011185, type: 2}
   context:
     scaleAnimations: 1
     scaleUniformly: 1
@@ -3571,7 +3573,8 @@ MonoBehaviour:
   updateFrom: 0
   animateOnStart: 1
   animationsOverride: 0
-  defaultAnimationsStrings: []
+  defaultAnimationsStrings:
+  - RedPal
   defaultShowAnimationsStrings: []
   defaultHideAnimationsStrings: []
   excludedCharacters: 
@@ -3588,7 +3591,7 @@ MonoBehaviour:
     _serializedList: []
   sceneHideAnimations:
     _serializedList: []
-  preview: 1
+  preview: 0
   useDefaultDatabase: 0
   useDefaultKeywordDatabase: 0
   initDatabase: 1
@@ -3664,8 +3667,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShowTotalSeconds
   secondsTextField: {fileID: 3132429002617413156}
   threshHold: 10000
-  duration: 1
-  TMPAnimator: {fileID: 4501368446068313717}
+  secondsFlashDuration: 1.2
+  secondsTMPAnimator: {fileID: 4501368446068313717}
+--- !u!114 &8813330210760315049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811025070527743316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae47eee56886e74daa9d497a2cc4ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventListener
+  gameEvent: {fileID: 0}
+  onEventTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8813330210760315048}
+        m_TargetAssemblyTypeName: ShowTotalSeconds, Assembly-CSharp
+        m_MethodName: ActivateTimeDown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onEventTriggeredWithParameter:
+    m_PersistentCalls:
+      m_Calls: []
+  onEventTriggeredWithParameterInt:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
