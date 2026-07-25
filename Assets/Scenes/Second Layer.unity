@@ -407,18 +407,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320820131}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 593479934}
+  m_Father: {fileID: 566441209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 765.3, y: 584.3}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &320820134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,6 +432,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClockController
   rotateSpeed: 20
+  hourHand: {fileID: 0}
+  minuteHand: {fileID: 0}
 --- !u!222 &320820136
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -797,6 +799,7 @@ GameObject:
   - component: {fileID: 566441209}
   - component: {fileID: 566441212}
   - component: {fileID: 566441211}
+  - component: {fileID: 566441213}
   m_Layer: 5
   m_Name: Clock
   m_TagString: Untagged
@@ -815,7 +818,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1591117046}
+  - {fileID: 320820132}
   m_Father: {fileID: 593479934}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -861,6 +866,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566441208}
   m_CullTransparentMesh: 1
+--- !u!114 &566441213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566441208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55385019471b4dc4dbbb795f29eb67ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClockController
+  rotateSpeed: -10
+  hourHand: {fileID: 320820132}
+  minuteHand: {fileID: 1591117046}
 --- !u!1 &586490626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,12 +1120,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6064907784868076941, guid: 8fb9b15907f176c44a3d952f9e3a0fbf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 566441209}
-    - targetCorrespondingSourceObject: {fileID: 6064907784868076941, guid: 8fb9b15907f176c44a3d952f9e3a0fbf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1591117046}
-    - targetCorrespondingSourceObject: {fileID: 6064907784868076941, guid: 8fb9b15907f176c44a3d952f9e3a0fbf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 320820132}
     - targetCorrespondingSourceObject: {fileID: 6064907784868076941, guid: 8fb9b15907f176c44a3d952f9e3a0fbf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 293545556}
@@ -3485,18 +3499,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591117045}
-  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 593479934}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
-  m_AnchorMin: {x: 0.5, y: 0.47953582}
-  m_AnchorMax: {x: 0.5, y: 0.47953582}
-  m_AnchoredPosition: {x: 765.6, y: 391.9}
+  m_Father: {fileID: 566441209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1591117047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3548,6 +3562,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClockController
   rotateSpeed: 20
+  hourHand: {fileID: 0}
+  minuteHand: {fileID: 0}
 --- !u!1 &1600551865
 GameObject:
   m_ObjectHideFlags: 0
