@@ -255,7 +255,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &3187999404508400111
@@ -363,3 +363,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OnTeamMemberClick
   mouseClick: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   mousePosition: {fileID: -1654692200621890270, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  defaultScaleModifier: 1.1

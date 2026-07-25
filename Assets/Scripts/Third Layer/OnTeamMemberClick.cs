@@ -1,3 +1,4 @@
+using Spine.Unity;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,7 @@ public class OnTeamMemberClick : MonoBehaviour
     private BoxCollider2D BoxCollider2D;
     private Rigidbody2D rb;
     private AudioSource audioSource;
+    private ISkeletonAnimation skeletonAnimation;
 
     private Vector3 defaultScale;
 
@@ -18,6 +20,8 @@ public class OnTeamMemberClick : MonoBehaviour
         BoxCollider2D = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        skeletonAnimation = GetComponent<ISkeletonAnimation>();
+
         defaultScale = transform.localScale;
     }
 
@@ -44,6 +48,7 @@ public class OnTeamMemberClick : MonoBehaviour
         rb.gravityScale = 1f;
         rb.AddForceY(10f);
         audioSource.Stop();
+        skeletonAnimation.ClearAnimationState();
     }
 
     private void checkMousePos(InputAction.CallbackContext context)
