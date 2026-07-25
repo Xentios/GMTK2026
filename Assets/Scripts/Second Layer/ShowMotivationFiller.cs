@@ -14,7 +14,9 @@ public class ShowMotivationFiller : MonoBehaviour
 
     void Start()
     {
-        colorTween = MotivationFillImage.DOColor(Color.red, 0.5f).SetLoops(-1, LoopType.Yoyo);
+        ColorUtility.TryParseHtmlString("#EF8A86", out Color color);
+        if (color == null) color = Color.red;
+        colorTween = MotivationFillImage.DOColor(color, 0.5f).SetLoops(-1, LoopType.Yoyo);
     }
 
 
