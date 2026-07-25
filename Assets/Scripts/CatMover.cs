@@ -22,7 +22,7 @@ public class CatMover : MonoBehaviour
     public AnimationReferenceAsset Idle;
 
     public Vector2 catPos;
-    private bool isSitting=false;
+    public bool isSitting=false;
     private bool isLooping = true;
     private bool directionFlip = false;
 
