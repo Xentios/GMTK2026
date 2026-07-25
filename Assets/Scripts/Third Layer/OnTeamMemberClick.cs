@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Spine.Unity;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -49,6 +50,8 @@ public class OnTeamMemberClick : MonoBehaviour
         rb.AddForceY(10f);
         audioSource.Stop();
         skeletonAnimation.ClearAnimationState();
+        transform.DOScale(defaultScale * 0.8f, 0.5f);
+        this.enabled = false;
     }
 
     private void checkMousePos(InputAction.CallbackContext context)
