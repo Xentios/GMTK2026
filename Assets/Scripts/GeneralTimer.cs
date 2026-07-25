@@ -8,6 +8,7 @@ public class GeneralTimer : MonoBehaviour
 
     public static GeneralTimer instance;
 
+    public GameEvent gameOverEvent;
     public Stopwatch jamTimer;
     private TimeSpan totalJamTime = new TimeSpan(4, 0, 0, 0);
 
@@ -44,6 +45,7 @@ public class GeneralTimer : MonoBehaviour
     public TimeSpan GetRemaningTime()
     {
         var result = totalJamTime - jamTimer.Elapsed;
+        if (result.Ticks < 0) gameOverEvent.TriggerEvent();
         if (result.Ticks < 0) return new TimeSpan();
         return result;
     }
@@ -52,5 +54,6 @@ public class GeneralTimer : MonoBehaviour
     public void RemoveTime(TimeSpan time)
     {
         totalJamTime = totalJamTime.Subtract(time);
+        if (GetRemaningTime().Ticks <= 0) gameOverEvent.TriggerEvent();
     }
 }
