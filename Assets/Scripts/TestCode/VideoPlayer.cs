@@ -11,7 +11,11 @@ public class VideoPlayer : MonoBehaviour
         videoPlayer = GetComponent<UnityEngine.Video.VideoPlayer>();
         videoPlayer.loopPointReached += EndReached;
     }
-
+    private void Start()
+    {
+        videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "countdown.mp4");
+        videoPlayer.Play();
+    }
     private void EndReached(UnityEngine.Video.VideoPlayer source)
     {
         Canvas.SetActive(true);
