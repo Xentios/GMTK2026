@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class ClockController : MonoBehaviour
 {
-    public Rigidbody2D myBody;
+    //public Rigidbody2D myBody;
     public float rotateSpeed = 2f;
 
     private void FixedUpdate()
     {
-        myBody.AddTorque(rotateSpeed * Time.fixedDeltaTime);
+        //myBody.AddTorque(rotateSpeed * Time.fixedDeltaTime);
+        transform.Rotate(0f, 0f, rotateSpeed*Time.fixedDeltaTime);
     }
 
 }
