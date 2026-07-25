@@ -37,6 +37,7 @@ public class ShowBurnoutUI : MonoBehaviour
         {
             colorTween.timeScale = 1f;
             colorTween.Pause();
+            burnOutFillImageHolder.color = Color.white;
         }
     }
 }
