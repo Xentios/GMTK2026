@@ -1,0 +1,1443 @@
+fileFormatVersion: 2
+guid: efaa6d2ced095204a8ebb42c8da0f24d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4069821954045979314
+    second: YoutubeMeme9_0
+  - first:
+      213: -7125875328199552556
+    second: YoutubeMeme9_1
+  - first:
+      213: -965317963020362852
+    second: YoutubeMeme9_2
+  - first:
+      213: 5530455220579184607
+    second: YoutubeMeme9_3
+  - first:
+      213: 255188115548743133
+    second: YoutubeMeme9_4
+  - first:
+      213: 2581057030049341726
+    second: YoutubeMeme9_5
+  - first:
+      213: -2995376042764974853
+    second: YoutubeMeme9_6
+  - first:
+      213: 9135625252675571423
+    second: YoutubeMeme9_7
+  - first:
+      213: 6788518172551271157
+    second: YoutubeMeme9_8
+  - first:
+      213: -6488066927048624867
+    second: YoutubeMeme9_9
+  - first:
+      213: -295856187183806948
+    second: YoutubeMeme9_10
+  - first:
+      213: -7645540421257936889
+    second: YoutubeMeme9_11
+  - first:
+      213: 8132329265485762804
+    second: YoutubeMeme9_12
+  - first:
+      213: 2706345646348533688
+    second: YoutubeMeme9_13
+  - first:
+      213: 6110920206634245246
+    second: YoutubeMeme9_14
+  - first:
+      213: 3057795678648140041
+    second: YoutubeMeme9_15
+  - first:
+      213: 5719682514109568673
+    second: YoutubeMeme9_16
+  - first:
+      213: 5852566930315018808
+    second: YoutubeMeme9_17
+  - first:
+      213: 6417462218101524717
+    second: YoutubeMeme9_18
+  - first:
+      213: 692486096317170846
+    second: YoutubeMeme9_19
+  - first:
+      213: -3179004605745625108
+    second: YoutubeMeme9_20
+  - first:
+      213: 235478801767700174
+    second: YoutubeMeme9_21
+  - first:
+      213: 97163499164421016
+    second: YoutubeMeme9_22
+  - first:
+      213: -6264041438520617918
+    second: YoutubeMeme9_23
+  - first:
+      213: -5715918533142144567
+    second: YoutubeMeme9_24
+  - first:
+      213: -909960066027369635
+    second: YoutubeMeme9_25
+  - first:
+      213: 6690331574604639971
+    second: YoutubeMeme9_26
+  - first:
+      213: 470847214819547841
+    second: YoutubeMeme9_27
+  - first:
+      213: -2058937061124877809
+    second: YoutubeMeme9_28
+  - first:
+      213: -8731374114108883470
+    second: YoutubeMeme9_29
+  - first:
+      213: -7346600872596123675
+    second: YoutubeMeme9_30
+  - first:
+      213: -4256441584531603502
+    second: YoutubeMeme9_31
+  - first:
+      213: -2492573720425633738
+    second: YoutubeMeme9_32
+  - first:
+      213: -4606454020466280307
+    second: YoutubeMeme9_33
+  - first:
+      213: -830295862069222183
+    second: YoutubeMeme9_34
+  - first:
+      213: 6883301848264727579
+    second: YoutubeMeme9_35
+  - first:
+      213: -3749200040246847074
+    second: YoutubeMeme9_36
+  - first:
+      213: 2044319828828847970
+    second: YoutubeMeme9_37
+  - first:
+      213: 2363371337738544077
+    second: YoutubeMeme9_38
+  - first:
+      213: -4557254653996120926
+    second: YoutubeMeme9_39
+  - first:
+      213: 4760691566990437360
+    second: YoutubeMeme9_40
+  - first:
+      213: 8523515762538753063
+    second: YoutubeMeme9_41
+  - first:
+      213: -6663703533950708044
+    second: YoutubeMeme9_42
+  - first:
+      213: -8613390878707063283
+    second: YoutubeMeme9_43
+  - first:
+      213: 7292862174167777765
+    second: YoutubeMeme9_44
+  - first:
+      213: 7598335837365146975
+    second: YoutubeMeme9_45
+  - first:
+      213: 8807117779519369823
+    second: YoutubeMeme9_46
+  - first:
+      213: -8368676982875975080
+    second: YoutubeMeme9_47
+  - first:
+      213: 446444040886513425
+    second: YoutubeMeme9_48
+  - first:
+      213: -7732112895342548262
+    second: YoutubeMeme9_49
+  - first:
+      213: 2395854451463863045
+    second: YoutubeMeme9_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: YoutubeMeme9_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 98
+        width: 624
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba2ffd1189ea7830800000000000000
+      internalID: 4069821954045979314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 59
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d112fcb42ecb1d90800000000000000
+      internalID: -7125875328199552556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 59
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b1ed65d608a92f0800000000000000
+      internalID: -965317963020362852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 59
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfa3d4b8bf10cc40800000000000000
+      internalID: 5530455220579184607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_4
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 59
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd52f223d3c9a8300800000000000000
+      internalID: 255188115548743133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 59
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11ad1d91b1c1d320800000000000000
+      internalID: 2581057030049341726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 59
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4474afb594e66d0800000000000000
+      internalID: -2995376042764974853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_7
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 59
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdec0d2c3c248ce70800000000000000
+      internalID: 9135625252675571423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_8
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 59
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2d3329f49a53e50800000000000000
+      internalID: 6788518172551271157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_9
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 59
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d157e4e4181c5f5a0800000000000000
+      internalID: -6488066927048624867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_10
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 59
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16ce428d58e4ebf0800000000000000
+      internalID: -295856187183806948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_11
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 59
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700c703ae7595e590800000000000000
+      internalID: -7645540421257936889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_12
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 59
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0dac94166dbd070800000000000000
+      internalID: 8132329265485762804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_13
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 59
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf770ac60fde8520800000000000000
+      internalID: 2706345646348533688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_14
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 59
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cd0370d895ec450800000000000000
+      internalID: 6110920206634245246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_15
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 59
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9010c8508f87f6a20800000000000000
+      internalID: 3057795678648140041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_16
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 59
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6938141f4606f40800000000000000
+      internalID: 5719682514109568673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_17
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 59
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83200a96d9e783150800000000000000
+      internalID: 5852566930315018808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_18
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 59
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de88e6dd2e76f0950800000000000000
+      internalID: 6417462218101524717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_19
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 59
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94c1e68f643c9900800000000000000
+      internalID: 692486096317170846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_20
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 59
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce783377728e1e3d0800000000000000
+      internalID: -3179004605745625108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_21
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 59
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec69f7bf8b6944300800000000000000
+      internalID: 235478801767700174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_22
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 59
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b44dc00b1395100800000000000000
+      internalID: 97163499164421016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_23
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 59
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244d6aeff77a119a0800000000000000
+      internalID: -6264041438520617918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_24
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 59
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c99dfad06afca0b0800000000000000
+      internalID: -5715918533142144567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_25
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 51
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5bc5a0242c2f53f0800000000000000
+      internalID: -909960066027369635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_26
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 59
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eea3e5ce15d8dc50800000000000000
+      internalID: 6690331574604639971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_27
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 59
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca1dc61c09c88600800000000000000
+      internalID: 470847214819547841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_28
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 59
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02d3c0d6af2d63e0800000000000000
+      internalID: -2058937061124877809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_29
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 59
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fdbf77018de3d680800000000000000
+      internalID: -8731374114108883470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_30
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 59
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef455a2e61ab0a90800000000000000
+      internalID: -7346600872596123675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_31
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 25
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dffac23ee41ee4c0800000000000000
+      internalID: -4256441584531603502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 25
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6386e815869986dd0800000000000000
+      internalID: -2492573720425633738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_33
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 25
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88ffe379769210c0800000000000000
+      internalID: -4606454020466280307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_34
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 25
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d423e200523a74f0800000000000000
+      internalID: -830295862069222183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_35
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 41
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cdb9bcf86668f50800000000000000
+      internalID: 6883301848264727579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_36
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 25
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99d4317d6a28fbc0800000000000000
+      internalID: -3749200040246847074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_37
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 25
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f71a49d02ee5c10800000000000000
+      internalID: 2044319828828847970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_38
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 25
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3ee32c5b16cc020800000000000000
+      internalID: 2363371337738544077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_39
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 25
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4c09d990161c0c0800000000000000
+      internalID: -4557254653996120926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_40
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 25
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fba9a7c1cf511240800000000000000
+      internalID: 4760691566990437360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_41
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 25
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ca09f2d6c994670800000000000000
+      internalID: 8523515762538753063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_42
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 25
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b65a5211f4c583a0800000000000000
+      internalID: -6663703533950708044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_43
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 25
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06631ba1a6177880800000000000000
+      internalID: -8613390878707063283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_44
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 25
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e147271283753560800000000000000
+      internalID: 7292862174167777765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_45
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 25
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f551546bf26b27960800000000000000
+      internalID: 7598335837365146975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_46
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 25
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52774755fa293a70800000000000000
+      internalID: 8807117779519369823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_47
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 18
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85290bb8f9c7cdb80800000000000000
+      internalID: -8368676982875975080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_48
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 25
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f61256d76123600800000000000000
+      internalID: 446444040886513425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_49
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 34
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adae3e5c94402b490800000000000000
+      internalID: -7732112895342548262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YoutubeMeme9_50
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 20
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50bba090ee8cf3120800000000000000
+      internalID: 2395854451463863045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      YoutubeMeme9_0: 4069821954045979314
+      YoutubeMeme9_1: -7125875328199552556
+      YoutubeMeme9_10: -295856187183806948
+      YoutubeMeme9_11: -7645540421257936889
+      YoutubeMeme9_12: 8132329265485762804
+      YoutubeMeme9_13: 2706345646348533688
+      YoutubeMeme9_14: 6110920206634245246
+      YoutubeMeme9_15: 3057795678648140041
+      YoutubeMeme9_16: 5719682514109568673
+      YoutubeMeme9_17: 5852566930315018808
+      YoutubeMeme9_18: 6417462218101524717
+      YoutubeMeme9_19: 692486096317170846
+      YoutubeMeme9_2: -965317963020362852
+      YoutubeMeme9_20: -3179004605745625108
+      YoutubeMeme9_21: 235478801767700174
+      YoutubeMeme9_22: 97163499164421016
+      YoutubeMeme9_23: -6264041438520617918
+      YoutubeMeme9_24: -5715918533142144567
+      YoutubeMeme9_25: -909960066027369635
+      YoutubeMeme9_26: 6690331574604639971
+      YoutubeMeme9_27: 470847214819547841
+      YoutubeMeme9_28: -2058937061124877809
+      YoutubeMeme9_29: -8731374114108883470
+      YoutubeMeme9_3: 5530455220579184607
+      YoutubeMeme9_30: -7346600872596123675
+      YoutubeMeme9_31: -4256441584531603502
+      YoutubeMeme9_32: -2492573720425633738
+      YoutubeMeme9_33: -4606454020466280307
+      YoutubeMeme9_34: -830295862069222183
+      YoutubeMeme9_35: 6883301848264727579
+      YoutubeMeme9_36: -3749200040246847074
+      YoutubeMeme9_37: 2044319828828847970
+      YoutubeMeme9_38: 2363371337738544077
+      YoutubeMeme9_39: -4557254653996120926
+      YoutubeMeme9_4: 255188115548743133
+      YoutubeMeme9_40: 4760691566990437360
+      YoutubeMeme9_41: 8523515762538753063
+      YoutubeMeme9_42: -6663703533950708044
+      YoutubeMeme9_43: -8613390878707063283
+      YoutubeMeme9_44: 7292862174167777765
+      YoutubeMeme9_45: 7598335837365146975
+      YoutubeMeme9_46: 8807117779519369823
+      YoutubeMeme9_47: -8368676982875975080
+      YoutubeMeme9_48: 446444040886513425
+      YoutubeMeme9_49: -7732112895342548262
+      YoutubeMeme9_5: 2581057030049341726
+      YoutubeMeme9_50: 2395854451463863045
+      YoutubeMeme9_6: -2995376042764974853
+      YoutubeMeme9_7: 9135625252675571423
+      YoutubeMeme9_8: 6788518172551271157
+      YoutubeMeme9_9: -6488066927048624867
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
