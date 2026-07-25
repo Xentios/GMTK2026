@@ -90,7 +90,6 @@ public class Item : MonoBehaviour
     {
         transform.localScale = Vector2.one * scaleReducer;
         rb.excludeLayers = LayerMask.GetMask("AreaTopLayer");
-        //rb.includeLayers = ~0;
     }
 
     //Resetting dragged/clicked item's speed

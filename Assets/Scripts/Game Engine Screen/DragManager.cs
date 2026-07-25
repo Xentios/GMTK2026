@@ -62,6 +62,7 @@ public class DragManager : MonoBehaviour
 
                 dragedItems.Add(currentItem.GetMyItem());
                 currentItem.GetMyItem().ScaleDownAfterSuccessDrag();
+
                 Destroy(currentItem);
             }
             currentItem = null;
