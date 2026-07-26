@@ -8,6 +8,8 @@ public class VideoPlayer : MonoBehaviour
 
     public string fileName = "countdown.mp4";
 
+    public bool doNotDestroyAtEnd = false;
+
     private void Awake()
     {
         videoPlayer = GetComponent<UnityEngine.Video.VideoPlayer>();
@@ -32,5 +34,7 @@ public class VideoPlayer : MonoBehaviour
     private void EndReached(UnityEngine.Video.VideoPlayer source)
     {
         Canvas.SetActive(true);
+        if (doNotDestroyAtEnd == true) return;
+        gameObject.SetActive(false);
     }
 }

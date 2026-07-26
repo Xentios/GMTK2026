@@ -296,6 +296,7 @@ MonoBehaviour:
   Canvas: {fileID: 1403939104}
   audioSource: {fileID: 0}
   fileName: countdown.mp4
+  doNotDestroyAtEnd: 0
 --- !u!328 &259686240
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -313,7 +314,7 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 0
-  m_AspectRatio: 2
+  m_AspectRatio: 0
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 0.8
@@ -773,6 +774,7 @@ MonoBehaviour:
   Canvas: {fileID: 1624260050}
   audioSource: {fileID: 432733207}
   fileName: intro.mp4
+  doNotDestroyAtEnd: 0
 --- !u!1 &1403939104
 GameObject:
   m_ObjectHideFlags: 0

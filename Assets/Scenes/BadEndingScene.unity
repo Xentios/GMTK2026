@@ -527,7 +527,7 @@ VideoPlayer:
   m_GameObject: {fileID: 1341922023}
   m_Enabled: 1
   m_VideoClip: {fileID: 0}
-  m_TargetCameraAlpha: 0.387
+  m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1251505423}
   m_TargetTexture: {fileID: 0}
@@ -584,6 +584,7 @@ MonoBehaviour:
   Canvas: {fileID: 2050626156}
   audioSource: {fileID: 0}
   fileName: countdown.mp4
+  doNotDestroyAtEnd: 0
 --- !u!1 &2050626156
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +618,7 @@ MonoBehaviour:
   Canvas: {fileID: 1256805301}
   audioSource: {fileID: 0}
   fileName: FailAnim.mp4
+  doNotDestroyAtEnd: 1
 --- !u!328 &2050626158
 VideoPlayer:
   m_ObjectHideFlags: 0
