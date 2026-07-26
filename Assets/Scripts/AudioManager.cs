@@ -1,10 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] private Sound[] sounds;
     public static AudioManager instance;
+
+    public AudioMixerGroup SFXMixerGroup;
 
     private void Awake()
     {
@@ -17,7 +20,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-                
+
         DontDestroyOnLoad(gameObject);
 
         foreach (Sound s in sounds)
@@ -28,10 +31,11 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
             s.source.playOnAwake = s.playOnAwake;
+            s.source.outputAudioMixerGroup = SFXMixerGroup;
             Debug.Log(s.name);
         }
 
-        
+
     }
 
     public void PlayMusic(string name)
@@ -41,7 +45,7 @@ public class AudioManager : MonoBehaviour
         if (s == null)
         {
             Debug.Log("Sound: " + name + " not found");
-            return;        
+            return;
         }
         if (s.source.isPlaying)
             return;

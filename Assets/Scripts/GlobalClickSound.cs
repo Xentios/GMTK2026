@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,8 +12,8 @@ public class GlobalClickSound : MonoBehaviour
 
             if (hit != null && hit.CompareTag("Cat"))
             {
-                
-                AudioManager.instance.PlaySFX("CatClick");
+
+                //  AudioManager.instance.PlaySFX("CatClick");
             }
             else if (hit != null && hit.CompareTag("CatEvent"))
             {

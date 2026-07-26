@@ -220,6 +220,7 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
+  SFXMixerGroup: {fileID: -9028547628985092580, guid: 3a7857f838ac385438a97619afe0b6de, type: 2}
 --- !u!82 &153145635
 AudioSource:
   m_ObjectHideFlags: 0

@@ -19,6 +19,12 @@ public class CatPetSystem : MonoBehaviour
     public GameObject hand;
     public float PettingReliefSpeed = 3.0f;
 
+    private AudioSource catPur;
+
+    private void Awake()
+    {
+        catPur = GetComponent<AudioSource>();
+    }
     private void OnEnable()
     {
         mouseClick.action.performed += pettingStarted;
@@ -38,7 +44,7 @@ public class CatPetSystem : MonoBehaviour
     }
     private void pettingEndded(InputAction.CallbackContext context)
     {
-
+        catPur.volume = 0f;
         if (isPetting == false) return;
 
         Cursor.visible = true;
@@ -83,6 +89,8 @@ public class CatPetSystem : MonoBehaviour
 
             return;
         }
+
+        catPur.volume = 1f;
 
         Cursor.visible = false;
         var mousePos = context.ReadValue<Vector2>();
