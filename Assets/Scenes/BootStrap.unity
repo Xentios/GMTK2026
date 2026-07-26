@@ -1004,7 +1004,7 @@ MonoBehaviour:
   duration: 2
   tempImage: {fileID: 1493875006}
   AudioSource: {fileID: 901387108}
-  errorSound: {fileID: 8300000, guid: dd23f24cb98955547a178e90fe0a5dd0, type: 3}
+  errorSound: {fileID: 8300000, guid: bf13e629a0f0cef478abd59d272b2108, type: 3}
 --- !u!82 &901387108
 AudioSource:
   m_ObjectHideFlags: 0

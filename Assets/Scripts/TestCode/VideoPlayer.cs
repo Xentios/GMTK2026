@@ -4,6 +4,7 @@ public class VideoPlayer : MonoBehaviour
 {
     UnityEngine.Video.VideoPlayer videoPlayer;
     public GameObject Canvas;
+    public AudioSource audioSource;
 
     public string fileName = "countdown.mp4";
 
@@ -25,6 +26,7 @@ public class VideoPlayer : MonoBehaviour
     private void OnPrepareCompleted(UnityEngine.Video.VideoPlayer source)
     {
         source.Play();
+        if (audioSource != null) audioSource.Play();
     }
 
     private void EndReached(UnityEngine.Video.VideoPlayer source)
