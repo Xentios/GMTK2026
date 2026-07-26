@@ -16,6 +16,10 @@ MonoBehaviour:
     _serializedList:
     - Key: RedPal
       Value: {fileID: 11400000, guid: 8e36679c9f1479647bd7a8afd1fac7a8, type: 2}
+    - Key: shake
+      Value: {fileID: 11400000, guid: 1808519c467a5bb468febe046d942d7f, type: 2}
+    - Key: sketcy
+      Value: {fileID: 11400000, guid: 5e21d8a0006f1fd44bae0336d8dba7c2, type: 2}
     - Key: wave
       Value: {fileID: 11400000, guid: caf90dcc4db077248b4aef29741767e8, type: 2}
     - Key: Grow2
