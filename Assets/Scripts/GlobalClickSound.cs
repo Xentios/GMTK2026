@@ -24,6 +24,14 @@ public class GlobalClickSound : MonoBehaviour
             {
                 AudioManager.instance.PlaySFX("SyrupClick");
             }
+            else if (hit != null && hit.CompareTag("Keyboard"))
+            {
+                AudioManager.instance.PlaySFX("KeyboardClick");
+            }
+            else if (hit != null && hit.CompareTag("Tab"))
+            {
+                AudioManager.instance.PlaySFX("TabClick");
+            }
             else
             { AudioManager.instance.PlaySFX("OnClick"); }
 

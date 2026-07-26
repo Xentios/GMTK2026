@@ -207,6 +207,20 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
+  - name: KeyboardClick
+    clip: {fileID: 8300000, guid: 245965889d0a183438ef3478b27122c0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: TabClick
+    clip: {fileID: 8300000, guid: 4a09040e8e6916c4aae24278581e6b06, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
 --- !u!82 &153145635
 AudioSource:
   m_ObjectHideFlags: 0

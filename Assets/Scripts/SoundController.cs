@@ -34,5 +34,12 @@ public class SoundController : MonoBehaviour
     {
         audioManager.PlaySFX("SyrupClick");
     }
-
+    public void PlayKeyboardClick()
+    {
+        audioManager.PlaySFX("KeyboardClick");
+    }
+    public void PlayTabClick()
+    {
+        audioManager.PlaySFX("TabClick");
+    }
 }

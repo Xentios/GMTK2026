@@ -12,6 +12,7 @@ TagManager:
   - CatEvent
   - Keyboard
   - Syrup
+  - Tab
   layers:
   - Default
   - TransparentFX
