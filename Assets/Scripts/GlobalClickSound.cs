@@ -20,6 +20,10 @@ public class GlobalClickSound : MonoBehaviour
             {
                 AudioManager.instance.PlaySFX("CatEventClick");
             }
+            else if (hit != null && hit.CompareTag("Syrup"))
+            {
+                AudioManager.instance.PlaySFX("SyrupClick");
+            }
             else
             { AudioManager.instance.PlaySFX("OnClick"); }
 

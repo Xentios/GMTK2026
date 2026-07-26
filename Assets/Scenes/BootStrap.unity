@@ -200,6 +200,13 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
+  - name: SyrupClick
+    clip: {fileID: 8300000, guid: d4b4f1e3e9871b24eb46fbe91cc0eb57, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
 --- !u!82 &153145635
 AudioSource:
   m_ObjectHideFlags: 0

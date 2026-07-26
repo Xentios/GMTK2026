@@ -10,6 +10,8 @@ TagManager:
   - HitMe
   - Cat
   - CatEvent
+  - Keyboard
+  - Syrup
   layers:
   - Default
   - TransparentFX

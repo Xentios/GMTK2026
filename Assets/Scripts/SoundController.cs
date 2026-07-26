@@ -30,4 +30,9 @@ public class SoundController : MonoBehaviour
     {
         audioManager.PlaySFX("CatEventClick");
     }
+    public void PlaySyrupClick()
+    {
+        audioManager.PlaySFX("SyrupClick");
+    }
+
 }
