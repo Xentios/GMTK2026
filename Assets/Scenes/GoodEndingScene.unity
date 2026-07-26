@@ -387,8 +387,8 @@ MonoBehaviour:
     your game in allocated time, is it a <funky> fun</> game though? You will learn
     when others play your game. If they  <dangle>play</>...</>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fd0643e178977974a888bf6b35ca79bb, type: 2}
-  m_sharedMaterial: {fileID: -1818180749300037044, guid: fd0643e178977974a888bf6b35ca79bb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 86daa6ec927d38843a00c0b4ac0f14bd, type: 2}
+  m_sharedMaterial: {fileID: -7533591463118423363, guid: 86daa6ec927d38843a00c0b4ac0f14bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &622094462

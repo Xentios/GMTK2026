@@ -281,8 +281,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 160.28
+  m_fontSizeBase: 160.28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 88.9
@@ -2013,6 +2013,10 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 116.34
       objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2454,8 +2458,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_text
+      value: astero -<jump> play tester</>
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
       propertyPath: m_fontSize
       value: 116.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3771,6 +3783,7 @@ GameObject:
   - component: {fileID: 1223511945}
   - component: {fileID: 1223511947}
   - component: {fileID: 1223511946}
+  - component: {fileID: 1223511948}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -3817,24 +3830,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Q/Tab to Zoom Out
+  m_text: '<wave>Q/Tab </>to Zoom Out
 
     Mouse Drag/Click to interact with objects
+
 
     You
     are in a game maker game where you are making a game in a game maker game.
 
 
-    Pet
-    Cat To Get Determination
+    <wave>Pet
+    Cat</> To Get Determination
 
-    Doom Scroll to get Happiness
+    <wave>Doom Scroll </>to get Happiness
 
-    Click on Keyboard
-    or Mouse To Change View
+    Click
+    on <dangle>Keyboard or Mouse</> To Change View
 
-    Now Go and Make an amazing Game Making Game in a
-    Game Making Game in a Game Making Game in...'
+    Now Go and Make an amazing
+    Game Making Game in a Game Making Game in a Game Making Game in...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86daa6ec927d38843a00c0b4ac0f14bd, type: 2}
   m_sharedMaterial: {fileID: -7533591463118423363, guid: 86daa6ec927d38843a00c0b4ac0f14bd, type: 2}
@@ -3861,7 +3875,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 89.45
+  m_fontSize: 81.3
   m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3914,6 +3928,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223511944}
   m_CullTransparentMesh: 1
+--- !u!114 &1223511948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223511944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64cc8a40f9848a54c94bf232155b0b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: TMPEffects::TMPEffects.Components.TMPAnimator
+  database: {fileID: 11400000, guid: f0a33761ff6919d4a9979ee36980a29d, type: 2}
+  context:
+    scaleAnimations: 1
+    scaleUniformly: 1
+    useScaledTime: 1
+    tmpAnimator: {fileID: 1223511948}
+  updateFrom: 0
+  animateOnStart: 1
+  animationsOverride: 0
+  defaultAnimationsStrings: []
+  defaultShowAnimationsStrings: []
+  defaultHideAnimationsStrings: []
+  excludedCharacters: 
+  excludedCharactersShow: 
+  excludedCharactersHide: 
+  excludePunctuation: 0
+  excludePunctuationShow: 0
+  excludePunctuationHide: 0
+  sceneKeywordDatabase: {fileID: 0}
+  keywordDatabase: {fileID: 0}
+  sceneAnimations:
+    _serializedList: []
+  sceneShowAnimations:
+    _serializedList: []
+  sceneHideAnimations:
+    _serializedList: []
+  preview: 1
+  useDefaultDatabase: 1
+  useDefaultKeywordDatabase: 0
+  initDatabase: 1
+  previewUpdatesPerSecond: 60
+  previewTimeScale: 1
 --- !u!1001 &1238756103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4203,8 +4261,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_text
+      value: 'Schatzig -<jump> 2D Artist</>
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
       propertyPath: m_fontSize
       value: 116.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846588015868789265, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: preview
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4436,6 +4508,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_text
+      value: Xentios -<jump> Lead Developer</>
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_fontSize
+      value: 116.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846588015868789265, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: context.scaleUniformly
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4648,8 +4736,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_text
+      value: Melodyfi -<jump> Programmer</>
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
       propertyPath: m_fontSize
       value: 116.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5113,7 +5209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1654965959
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6367,11 +6463,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 834623334105605554, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 834623334105605554, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 834623334105605554, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6383,19 +6479,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 834623334105605554, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 266.8675
       objectReference: {fileID: 0}
     - target: {fileID: 834623334105605554, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.7
       objectReference: {fileID: 0}
     - target: {fileID: 910161528517341787, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 910161528517341787, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 910161528517341787, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6407,11 +6503,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 910161528517341787, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 458.735
       objectReference: {fileID: 0}
     - target: {fileID: 910161528517341787, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.7
       objectReference: {fileID: 0}
     - target: {fileID: 1062050294890238016, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_Spacing
@@ -6459,11 +6555,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6147940896162173982, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6147940896162173982, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6147940896162173982, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6475,19 +6571,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6147940896162173982, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 650.6025
       objectReference: {fileID: 0}
     - target: {fileID: 6147940896162173982, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.7
       objectReference: {fileID: 0}
     - target: {fileID: 6592031570487822505, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6592031570487822505, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6592031570487822505, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_SizeDelta.x
@@ -6499,11 +6595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6592031570487822505, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 6592031570487822505, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.7
       objectReference: {fileID: 0}
     - target: {fileID: 6661531714084342708, guid: 0ea6f50ef2edead4c9cfc4718aeb2186, type: 3}
       propertyPath: m_text
@@ -6730,6 +6826,7 @@ GameObject:
   - component: {fileID: 1873351812}
   - component: {fileID: 1873351814}
   - component: {fileID: 1873351813}
+  - component: {fileID: 1873351815}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6776,11 +6873,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Click HERE to Start Makign a Game Making Game Where you are making a Game
-    Making Game
+  m_text: "<wave>Click HERE</> \n\nto Start Makign a Game Making Game \nWhere you
+    are making a Game Making Game \nin a Game Making Game"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86daa6ec927d38843a00c0b4ac0f14bd, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -7533591463118423363, guid: 86daa6ec927d38843a00c0b4ac0f14bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6804,12 +6901,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 98.69
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 98.69
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6846,7 +6943,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1873351814
@@ -6857,6 +6954,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873351811}
   m_CullTransparentMesh: 1
+--- !u!114 &1873351815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873351811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64cc8a40f9848a54c94bf232155b0b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: TMPEffects::TMPEffects.Components.TMPAnimator
+  database: {fileID: 11400000, guid: f0a33761ff6919d4a9979ee36980a29d, type: 2}
+  context:
+    scaleAnimations: 1
+    scaleUniformly: 1
+    useScaledTime: 1
+    tmpAnimator: {fileID: 1873351815}
+  updateFrom: 0
+  animateOnStart: 1
+  animationsOverride: 0
+  defaultAnimationsStrings: []
+  defaultShowAnimationsStrings: []
+  defaultHideAnimationsStrings: []
+  excludedCharacters: 
+  excludedCharactersShow: 
+  excludedCharactersHide: 
+  excludePunctuation: 0
+  excludePunctuationShow: 0
+  excludePunctuationHide: 0
+  sceneKeywordDatabase: {fileID: 0}
+  keywordDatabase: {fileID: 0}
+  sceneAnimations:
+    _serializedList: []
+  sceneShowAnimations:
+    _serializedList: []
+  sceneHideAnimations:
+    _serializedList: []
+  preview: 1
+  useDefaultDatabase: 1
+  useDefaultKeywordDatabase: 0
+  initDatabase: 1
+  previewUpdatesPerSecond: 60
+  previewTimeScale: 1
 --- !u!1 &1896761650
 GameObject:
   m_ObjectHideFlags: 0
@@ -7688,6 +7829,10 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 116.34
       objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8066,6 +8211,14 @@ PrefabInstance:
     - target: {fileID: 7535185488163848205, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_fontSize
+      value: 116.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830205812768108547, guid: dc1dbff6a6230d24992ae5f0cafb1ce9, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

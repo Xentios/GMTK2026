@@ -466,6 +466,18 @@ PrefabInstance:
         some technical difficulties or just perhaps spent too much time in social
         media \nor maybe, it is <shake>you</></>"
       objectReference: {fileID: 0}
+    - target: {fileID: 2236728603619789269, guid: 9aae4372397d9844198852c4fc1c33e1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 86daa6ec927d38843a00c0b4ac0f14bd, type: 2}
+    - target: {fileID: 2236728603619789269, guid: 9aae4372397d9844198852c4fc1c33e1, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -7533591463118423363, guid: 86daa6ec927d38843a00c0b4ac0f14bd, type: 2}
+    - target: {fileID: 2236728603619789269, guid: 9aae4372397d9844198852c4fc1c33e1, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4595408283593386427, guid: 9aae4372397d9844198852c4fc1c33e1, type: 3}
       propertyPath: m_Name
       value: Canvas (1)
