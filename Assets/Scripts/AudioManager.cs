@@ -62,7 +62,6 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(string name)
     {
-        Debug.Log("PlaySFX çalıstı" + name);
 
         Sound s = Array.Find(sounds, sound => sound.name == name);
 
@@ -71,9 +70,6 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Sound: " + name + " not found");
             return;
         }
-
-        Debug.Log(s.clip);
-        Debug.Log(s.source);
 
         s.source.PlayOneShot(s.clip, s.volume);
     }

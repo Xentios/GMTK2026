@@ -1655,6 +1655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spine GameObject (CatPet)
       objectReference: {fileID: 0}
+    - target: {fileID: 131269309917666081, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2274463648939954690, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.99

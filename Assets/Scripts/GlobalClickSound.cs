@@ -7,7 +7,6 @@ public class GlobalClickSound : MonoBehaviour
     {
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Debug.Log("Tıklandı");
             AudioManager.instance.PlaySFX("OnClick");
         }
     }

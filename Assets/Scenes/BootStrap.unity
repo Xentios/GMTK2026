@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 153145635}
   - component: {fileID: 153145634}
   - component: {fileID: 153145633}
+  - component: {fileID: 153145636}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -179,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   sounds:
   - name: OnClick
-    clip: {fileID: 8300000, guid: 5d5f7b0ecd8036e4da9864ad914e0c7c, type: 3}
+    clip: {fileID: 8300000, guid: 8f7dade61c5cee742bbe8b6378ca33a6, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -282,6 +283,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &153145636
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153145631}
+  m_Enabled: 1
 --- !u!1 &313841312
 GameObject:
   m_ObjectHideFlags: 0
