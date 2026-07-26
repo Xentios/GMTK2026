@@ -31,6 +31,10 @@ public class GlobalClickSound : MonoBehaviour
             {
                 AudioManager.instance.PlaySFX("TabClick");
             }
+            else if (hit != null && hit.CompareTag("Modem"))
+            {
+                AudioManager.instance.PlayModemSounds();
+            }
             else
             { AudioManager.instance.PlaySFX("OnClick"); }
 

@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
 {
@@ -8,6 +10,9 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public AudioMixerGroup SFXMixerGroup;
+
+    public List<AudioClip> modemSounds;
+    public AudioSource generalAudioSource;
 
     private void Awake()
     {
@@ -94,5 +99,11 @@ public class AudioManager : MonoBehaviour
         }
 
         s.source.Stop();
+    }
+
+    public void PlayModemSounds()
+    {
+        var clip = modemSounds[Random.Range(0, modemSounds.Count)];
+        generalAudioSource.PlayOneShot(clip);
     }
 }

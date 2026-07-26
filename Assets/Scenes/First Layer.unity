@@ -1822,6 +1822,69 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 131269309917666081, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
   m_PrefabInstance: {fileID: 610711818}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &637596658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9036002095514927919, guid: 4093116e1f04a684dbb2f6b5215a8bbb, type: 3}
+  m_PrefabInstance: {fileID: 3306893307002600906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &637596659
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637596658}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.62, y: 5.43}
+    newSize: {x: 4.62, y: 5.43}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.5999999, y: -2.595}
+      - {x: 2.31, y: -1.3249999}
+      - {x: 2.23, y: -0.92499995}
+      - {x: 1.4499999, y: -0.715}
+      - {x: 0.7628762, y: -1.4686978}
+      - {x: -0.72972536, y: -1.0834926}
+      - {x: -0.45999998, y: -0.295}
+      - {x: -1, y: -0.305}
+      - {x: -2.25, y: -1.665}
+      - {x: -1.87, y: -1.9549999}
+      - {x: 1.03, y: -2.715}
+  m_UseDelaunayMesh: 1
 --- !u!61 &673942558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7099,6 +7162,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9036002095514927919, guid: 4093116e1f04a684dbb2f6b5215a8bbb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036002095514927919, guid: 4093116e1f04a684dbb2f6b5215a8bbb, type: 3}
+      propertyPath: m_TagString
+      value: Modem
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7109,6 +7180,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4416918627515708272, guid: 4093116e1f04a684dbb2f6b5215a8bbb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3306893307002600908}
+    - targetCorrespondingSourceObject: {fileID: 9036002095514927919, guid: 4093116e1f04a684dbb2f6b5215a8bbb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 637596659}
     - targetCorrespondingSourceObject: {fileID: 5084991186479957909, guid: 4093116e1f04a684dbb2f6b5215a8bbb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3306893307002600911}
@@ -7241,8 +7315,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 17.14, y: 25.641138}
+  m_Offset: {x: 0.5898976, y: -0.873673}
+  m_Size: {x: 20.417671, y: 33.897327}
   m_Direction: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

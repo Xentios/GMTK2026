@@ -13,6 +13,7 @@ TagManager:
   - Keyboard
   - Syrup
   - Tab
+  - Modem
   layers:
   - Default
   - TransparentFX

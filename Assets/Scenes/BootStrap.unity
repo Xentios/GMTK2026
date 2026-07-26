@@ -221,6 +221,12 @@ MonoBehaviour:
     playOnAwake: 0
     source: {fileID: 0}
   SFXMixerGroup: {fileID: -9028547628985092580, guid: 3a7857f838ac385438a97619afe0b6de, type: 2}
+  modemSounds:
+  - {fileID: 8300000, guid: 618559bc47eb405469f5db4a66d11806, type: 3}
+  - {fileID: 8300000, guid: 532af14f5ea610f47be7ca9c0f00c381, type: 3}
+  - {fileID: 8300000, guid: ef232f7b971b8724bb03395b8071b16b, type: 3}
+  - {fileID: 8300000, guid: a6adea46a6687e540835fb64983ab9c9, type: 3}
+  generalAudioSource: {fileID: 153145635}
 --- !u!82 &153145635
 AudioSource:
   m_ObjectHideFlags: 0
@@ -230,10 +236,10 @@ AudioSource:
   m_GameObject: {fileID: 153145631}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -9028547628985092580, guid: 3a7857f838ac385438a97619afe0b6de, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
