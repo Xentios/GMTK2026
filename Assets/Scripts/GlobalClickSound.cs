@@ -1,8 +1,10 @@
+using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 public class GlobalClickSound : MonoBehaviour
 {
+    private Sequence jumpSequence;
     private void Update()
     {
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
@@ -22,6 +24,7 @@ public class GlobalClickSound : MonoBehaviour
             else if (hit != null && hit.CompareTag("Syrup"))
             {
                 AudioManager.instance.PlaySFX("SyrupClick");
+                StartCoroutine(CuteJump(hit.transform));
             }
             else if (hit != null && hit.CompareTag("Keyboard"))
             {
@@ -39,5 +42,23 @@ public class GlobalClickSound : MonoBehaviour
             { AudioManager.instance.PlaySFX("OnClick"); }
 
         }
+
+
+
+    }
+
+    IEnumerator CuteJump(Transform target)
+    {
+        yield return null;
+        if (jumpSequence == null)
+        {
+            jumpSequence = target.DOJump(target.position, 0.4f, 2, 0.3f).SetLoops(2, LoopType.Yoyo);
+        }
+        else if (jumpSequence.active == false)
+        {
+            jumpSequence = target.DOJump(target.position, 0.4f, 2, 0.3f).SetLoops(2, LoopType.Yoyo);
+        }
+
+
     }
 }
