@@ -32,6 +32,8 @@ public class Item : MonoBehaviour
     public int valueCorruption = -20;
     public bool corruption = false;
 
+    public bool isScaledDown = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -51,6 +53,8 @@ public class Item : MonoBehaviour
 
         if (usePhysics)
             return;
+
+        if (isScaledDown == true) return;
 
         rb.linearVelocity = Vector2.down * GameEngineManager.Instance.CurrentFallSpeed;
     }
@@ -99,6 +103,7 @@ public class Item : MonoBehaviour
         transform.localScale = Vector2.one * scaleReducer;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
         rb.excludeLayers = LayerMask.GetMask("AreaTopLayer");
+        isScaledDown = true;
     }
 
     //Resetting dragged/clicked item's speed
@@ -118,12 +123,9 @@ public class Item : MonoBehaviour
     public void FireTowardsRight()
     {
         rb.excludeLayers = ~0;
-        rb.gravityScale = -1f;
-        rb.linearVelocity = Vector2.zero;
-        rb.AddForce(new Vector2(1, 10) * force, ForceMode2D.Impulse);
-        rb.AddForce(Vector2.up * 10f);
-        rb.AddRelativeForce(Vector2.up * 10f);
-        //rb.AddForce(transform.forward * 200, ForceMode.Impulse);
+        rb.gravityScale = 1f;
+        rb.AddForceX(Random.Range(-350, 350));
+        rb.AddForceY(Random.Range(100, 400));
     }
 
     private void OnTriggerEnter2D(Collider2D other)
