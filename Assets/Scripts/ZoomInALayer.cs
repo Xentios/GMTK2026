@@ -16,6 +16,8 @@ public class ZoomInALayer : MonoBehaviour
 
     private float originalorthographicSize;
 
+    public AudioSource music;
+
     private void Start()
     {
         originalorthographicSize = cam.orthographicSize;
@@ -33,6 +35,8 @@ public class ZoomInALayer : MonoBehaviour
 
         postProcessEffects.weight = 0f;
         DOTween.To(() => postProcessEffects.weight, x => postProcessEffects.weight = x, 1f, duration / 2f);//.OnComplete(ChangeLevel);
+        music.DOFade(0, duration * 0.9f);
+        music.DOPitch(0, duration * 0.9f);
         var finalRotation = Quaternion.LookRotation(zoomTarget.position - cam.transform.position);
         cam.transform.DORotateQuaternion(finalRotation, duration);
     }
