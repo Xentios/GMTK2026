@@ -1424,7 +1424,7 @@ MonoBehaviour:
   catIdle: {fileID: 2453144188931081625, guid: 6af3801f888ea5242835659c314ea42c, type: 2}
   catAfterPetting: {fileID: -2384236362173223601, guid: 6af3801f888ea5242835659c314ea42c, type: 2}
   hand: {fileID: 1934908268}
-  PettingReliefSpeed: 0.1
+  PettingReliefSpeed: 0.2
   handSlipOffset: 0.3
 --- !u!4 &480163687
 Transform:
