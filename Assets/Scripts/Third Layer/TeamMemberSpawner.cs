@@ -13,6 +13,8 @@ public class TeamMemberSpawner : MonoBehaviour
     [SerializeField] private float firstDelay = 10f;
     [SerializeField] private float spawnIntervalModifier = 1f;
 
+    [SerializeField] private float audioPlayDelay = 1.5f;
+
     public BoxCollider2D spawnCollider;
 
     private int lastIndex = -1;
@@ -47,7 +49,7 @@ public class TeamMemberSpawner : MonoBehaviour
         var randomVoiceIndex = RandomExcept(0, voiceLines.Count, lastIndex);
         lastIndex = randomVoiceIndex;
         result.GetComponent<AudioSource>().clip = voiceLines[randomVoiceIndex];
-        result.GetComponent<AudioSource>().PlayDelayed(1f);
+        result.GetComponent<AudioSource>().PlayDelayed(audioPlayDelay);
     }
 
 
