@@ -420,6 +420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GetAssetValues
   itemType: 0
   textMeshPro: {fileID: 5134901530477565848}
+  Icon: {fileID: 4137891072840781039}
+  Bar: {fileID: 1483915454875414624}
   fillBar: {fileID: 7538473969701795859}
   fillDelay: 1
 --- !u!114 &6276367572519677931

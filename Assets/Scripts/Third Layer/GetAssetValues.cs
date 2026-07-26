@@ -6,6 +6,8 @@ public class GetAssetValues : MonoBehaviour
 {
     public ItemType itemType;
     public TextMeshProUGUI textMeshPro;
+    public GameObject Icon;
+    public GameObject Bar;
     public Image fillBar;
 
     public float fillDelay = 1f;
@@ -40,11 +42,25 @@ public class GetAssetValues : MonoBehaviour
         var value = GameManager.instance.GetThirdLayerValue(itemType);
         if (oldValue == value) return;
 
+        Icon.transform.localScale = Vector3.one;
+        Bar.transform.localScale = Vector3.one;
+        if (oldValue > value)
+        {
+            Icon.transform.DOScale(Vector3.one * 0.8f, fillDelay / 3f).SetLoops(2, LoopType.Yoyo);
+            Bar.transform.DOScale(Vector3.one * 0.8f, fillDelay / 3f).SetLoops(2, LoopType.Yoyo);
+        }
+        else
+        {
+            Bar.transform.DOScale(Vector3.one * 1.4f, fillDelay / 3f).SetLoops(2, LoopType.Yoyo);
+        }
+
         oldValue = value;
         //fillBar.fillAmount = ((float) value / 100f);
         textMeshPro.text = oldValue + "/100";
         float fillvalue = (float) value / 100f;
         fillBar.DOFillAmount(fillvalue, fillDelay);
+
+
     }
 
 }
