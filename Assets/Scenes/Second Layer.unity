@@ -1344,7 +1344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857baf49cd0de7d4fbdce51d883d069a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  timeLimitToAddNewClock: 3
+  timeLimitToAddNewClock: 7
   aditionalClocks:
   - {fileID: 1600227431}
   - {fileID: 1970701636}
