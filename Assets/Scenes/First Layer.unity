@@ -3807,8 +3807,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.9, y: -131}
-  m_SizeDelta: {x: 1947.9, y: 894.5}
+  m_AnchoredPosition: {x: -1.9, y: -123.5}
+  m_SizeDelta: {x: 2079.1, y: 909.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1223511946
 MonoBehaviour:
@@ -3834,21 +3834,23 @@ MonoBehaviour:
 
     Mouse Drag/Click to interact with objects
 
-
     You
-    are in a game maker game where you are making a game in a game maker game.
+    are in a game maker game where you are making a game in a game maker game in
+    a ga...
 
 
-    <wave>Pet
-    Cat</> To Get Determination
+    <wave>Pet Cat</> to get Determination
 
-    <wave>Doom Scroll </>to get Happiness
+    <wave>Doom Scroll </>to
+    get Happiness
+
+    Not caring for cat or yourself has <shake>dire</> consequences!
 
     Click
     on <dangle>Keyboard or Mouse</> To Change View
 
-    Now Go and Make an amazing
-    Game Making Game in a Game Making Game in a Game Making Game in...'
+    Now make an amazing Game
+    you have less than 96 hours.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 86daa6ec927d38843a00c0b4ac0f14bd, type: 2}
   m_sharedMaterial: {fileID: -7533591463118423363, guid: 86daa6ec927d38843a00c0b4ac0f14bd, type: 2}
@@ -3875,11 +3877,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 81.3
+  m_fontSize: 83.65
   m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 70
+  m_fontSizeMin: 69.31
   m_fontSizeMax: 100
   m_fontStyle: 1
   m_HorizontalAlignment: 1
