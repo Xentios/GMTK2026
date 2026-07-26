@@ -23,6 +23,7 @@ public class PawSwawner : MonoBehaviour
         target.z = 0;
         Vector3 dir = pawHolder.transform.position - target;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        AudioManager.instance.PlaySFX("PawEventSound");
         pawHolder.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 90));
         pawHolder.transform.DOMove(target, 0.4f).OnComplete(CleanUp);
 
@@ -30,7 +31,7 @@ public class PawSwawner : MonoBehaviour
 
     private void CleanUp()
     {
-
+        
 
         for (var i = dragManager.dragedItems.Count - 1; i >= 0; i--)
         {
