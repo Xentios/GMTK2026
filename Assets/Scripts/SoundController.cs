@@ -42,4 +42,9 @@ public class SoundController : MonoBehaviour
     {
         audioManager.PlaySFX("TabClick");
     }
+
+    public void PlayPawEventSound()
+    {
+        audioManager.PlaySFX("PawEventSound");
+    }
 }

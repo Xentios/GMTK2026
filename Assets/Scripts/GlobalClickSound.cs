@@ -36,5 +36,7 @@ public class GlobalClickSound : MonoBehaviour
             { AudioManager.instance.PlaySFX("OnClick"); }
 
         }
+
+        
     }
 }
