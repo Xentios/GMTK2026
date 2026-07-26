@@ -4064,6 +4064,7 @@ MonoBehaviour:
   blockerObject: {fileID: 1886699463}
   skeletonRenderer: {fileID: 1649782873}
   skeletonRendererAnim: {fileID: 1649782869}
+  skeletonGraphic: {fileID: 0}
   Walk: {fileID: -3211370565266154352, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
   Sit: {fileID: 7427940375227580799, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
   Sitting: {fileID: 6887593881455049368, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
@@ -4071,6 +4072,9 @@ MonoBehaviour:
   Idle: {fileID: 7460678818133451274, guid: fd79d64b3dbcb29469ff892fb2fda657, type: 2}
   catPos: {x: 0, y: 0}
   isSitting: 0
+  skinNames:
+  - calico
+  - cow
 --- !u!1 &1723044030
 GameObject:
   m_ObjectHideFlags: 0

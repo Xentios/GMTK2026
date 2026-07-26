@@ -1,9 +1,8 @@
 using Spine;
 using Spine.Unity;
-using UnityEngine;
 using System.Collections;
-using Unity.VisualScripting;
-using DG.Tweening;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class CatMover : MonoBehaviour
@@ -28,11 +27,19 @@ public class CatMover : MonoBehaviour
     public AnimationReferenceAsset Idle;
 
     public Vector2 catPos;
-    public bool isSitting=false;
+    public bool isSitting = false;
     private bool isLooping = true;
     private bool directionFlip = false;
 
+    public List<string> skinNames;
     private int hitCount;
+
+    private void Start()
+    {
+        skeletonRenderer.skeleton.SetSkin(skinNames[Random.Range(0, skinNames.Count)]);
+        skeletonRenderer.skeleton.SetupPoseSlots();
+        skeletonRenderer.LateUpdate();
+    }
 
     public void StartWalking()
     {
@@ -49,9 +56,9 @@ public class CatMover : MonoBehaviour
     // Walking coroutine
     IEnumerator WalkingStarted()
     {
-        while (isSitting==false)
+        while (isSitting == false)
         {
-            
+
             //Walking based on the cat's direction.
             Vector2 newPosition = transform.position;
             if (skeletonRenderer.initialFlipX == false)
@@ -63,23 +70,23 @@ public class CatMover : MonoBehaviour
             catPos = newPosition;
 
             //If the cat is not on the screen, stops the animation and the cat, flips the cat to get it ready for the next event
-            if (catPos.x >= 19 && directionFlip==false) 
+            if (catPos.x >= 19 && directionFlip == false)
             {
                 IsWalking = false;
                 skeletonRendererAnim.AnimationState.SetAnimation(0, Walk, false);
 
                 if (skeletonRenderer.initialFlipX == false)
-                    { skeletonRenderer.initialFlipX = true; }
+                { skeletonRenderer.initialFlipX = true; }
                 else if (skeletonRenderer.initialFlipX == true)
-                    { skeletonRenderer.initialFlipX = false; }
+                { skeletonRenderer.initialFlipX = false; }
 
-                transform.eulerAngles = new Vector3 (0, -180, 0);
+                transform.eulerAngles = new Vector3(0, -180, 0);
                 directionFlip = true;
                 isLooping = true;
                 speed = 2;
                 yield break;
             }
-            else if (catPos.x <=-17 && directionFlip==true)
+            else if (catPos.x <= -17 && directionFlip == true)
             {
                 IsWalking = false;
 
@@ -90,7 +97,7 @@ public class CatMover : MonoBehaviour
                 else if (skeletonRenderer.initialFlipX == true)
                 { skeletonRenderer.initialFlipX = false; }
 
-                transform.eulerAngles = new Vector3 (0, -0, 0);
+                transform.eulerAngles = new Vector3(0, -0, 0);
                 directionFlip = false;
                 isLooping = true;
                 speed = 2;
@@ -98,7 +105,7 @@ public class CatMover : MonoBehaviour
             }
             yield return null;
         }
-        
+
     }
 
     // Checks if chat should sit
@@ -108,13 +115,13 @@ public class CatMover : MonoBehaviour
         {
             if (catPos.x >= 0.0 && catPos.x <= 0.9)
             {
-                if (isSitting==false)
+                if (isSitting == false)
                 {
-                    
+
                     StartCoroutine(SitForABit());
                     isLooping = false;
                     yield break;
-                }               
+                }
             }
             yield return null;
         }
@@ -151,20 +158,20 @@ public class CatMover : MonoBehaviour
             }
             yield return null;
         }
-        
+
     }
 
     public void StartSitDown()
     {
-        
+
     }
 
     private void SitDown(TrackEntry trackEntry)
-    {        
+    {
     }
 
     public void SitDown()
     {
-        
+
     }
 }
