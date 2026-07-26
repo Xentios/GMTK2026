@@ -2351,6 +2351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe9b4bd564a1ca42ba287e212435898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragManager
+  cam: {fileID: 833605892}
   dragArea: {fileID: 1939334734}
   dragedItems: []
   ShowTotalSeconds: {fileID: 8813330210760315048}

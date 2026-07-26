@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class DragManager : MonoBehaviour
 {
-    private Camera cam;
+    public Camera cam;
     private ItemDrag currentItem;
 
     public BoxCollider2D dragArea;
@@ -14,10 +14,7 @@ public class DragManager : MonoBehaviour
     public ShowTotalSeconds ShowTotalSeconds;
 
     private Vector3 offset;
-    private void Awake()
-    {
-        cam = Camera.main;
-    }
+
 
     private void Update()
     {
