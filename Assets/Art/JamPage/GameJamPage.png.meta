@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 10f2df8c534909d4f94d543a5a515d1e
+guid: 317f22ecde4f89647bd4e01aa1471df6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4282643371698308318
-    second: JamPage 1_0
+      213: -6695950386315148514
+    second: BG_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JamPage 1_0
+      name: BG_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed442c5c4710f6b30800000000000000
-      internalID: 4282643371698308318
+      spriteID: e13cb0ea9943313a0800000000000000
+      internalID: -6695950386315148514
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JamPage 1_0: 4282643371698308318
+      BG_0: -6695950386315148514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

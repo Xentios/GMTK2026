@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e30be0d11838d7d4a9e568d8764f814c
+guid: c2493ec2fe9a0134ea86bb99d473b040
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8678530791462928032
-    second: JamPage_0
+      213: 3177624595155267087
+    second: FakeJan_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JamPage_0
+      name: FakeJan_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0aeff6526c5507870800000000000000
-      internalID: 8678530791462928032
+      spriteID: f0e26c7cbb0391c20800000000000000
+      internalID: 3177624595155267087
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JamPage_0: 8678530791462928032
+      FakeJan_0: 3177624595155267087
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
