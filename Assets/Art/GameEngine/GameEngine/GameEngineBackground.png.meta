@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f88ea0c37b3175a41a052b64bb9de233
+guid: 95a72134fa5cd2d4b9c09c18c303d3c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7412641515795688242
-    second: GameEngine_Background_0
+      213: -342612412961065168
+    second: GameEngineBackground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,11 +96,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GameEngine_Background_0
+      name: GameEngineBackground_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23ba05c4f2efed660800000000000000
-      internalID: 7412641515795688242
+      spriteID: 037f0dd53dbce3bf0800000000000000
+      internalID: -342612412961065168
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GameEngine_Background_0: 7412641515795688242
+      GameEngineBackground_0: -342612412961065168
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
