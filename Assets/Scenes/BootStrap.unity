@@ -186,6 +186,20 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
+  - name: CatClick
+    clip: {fileID: 8300000, guid: 81eeffe8bbc148e46ac81f8fa37df3ad, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: CatEventClick
+    clip: {fileID: 8300000, guid: 65547502373d5274883d9113595f4516, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
 --- !u!82 &153145635
 AudioSource:
   m_ObjectHideFlags: 0

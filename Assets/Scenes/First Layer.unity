@@ -1655,10 +1655,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spine GameObject (CatPet)
       objectReference: {fileID: 0}
-    - target: {fileID: 131269309917666081, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 2274463648939954690, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.99
@@ -1703,83 +1699,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6215992573564446279, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6215992573564446279, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: c6407c4ec76ec5846b451cf030c45506, type: 2}
-    - target: {fileID: 6994522182281540446, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
-      propertyPath: initialSkinName
-      value: orange
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 131269309917666081, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 673942558}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
---- !u!1 &610711819 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 131269309917666081, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
+--- !u!61 &673942558 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 427658182962798150, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
   m_PrefabInstance: {fileID: 610711818}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &673942558
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 610711819}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -1.1337414, y: 0.11016917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 7.3193245, y: 6.1140018}
-  m_EdgeRadius: 0
 --- !u!114 &673942559 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 815598769131171249, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
   m_PrefabInstance: {fileID: 610711818}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 610711819}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
@@ -1790,7 +1725,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6994522182281540446, guid: 85158ec36c93c6a43b8b12f73eafd2d8, type: 3}
   m_PrefabInstance: {fileID: 610711818}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 610711819}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e075b9a3e08e2f74fbd651c858ab16ed, type: 3}

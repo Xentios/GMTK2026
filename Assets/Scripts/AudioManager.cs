@@ -43,6 +43,8 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Sound: " + name + " not found");
             return;        
         }
+        if (s.source.isPlaying)
+            return;
 
         s.source.Play();
     }
@@ -70,6 +72,9 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Sound: " + name + " not found");
             return;
         }
+
+        if (s.source.isPlaying)
+            return;
 
         s.source.PlayOneShot(s.clip, s.volume);
     }

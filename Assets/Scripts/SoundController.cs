@@ -21,4 +21,13 @@ public class SoundController : MonoBehaviour
     {
         audioManager.PlaySFX("OnClick");
     }
+
+    public void PlayCatClick ()
+    {
+        audioManager.PlaySFX("CatClick");
+    }
+    public void PlayCatEventClick()
+    {
+        audioManager.PlaySFX("CatEventClick");
+    }
 }

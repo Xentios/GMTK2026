@@ -3934,6 +3934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spine GameObject (CatWalk)
       objectReference: {fileID: 0}
+    - target: {fileID: 7763679916836860633, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
+      propertyPath: m_TagString
+      value: CatEvent
+      objectReference: {fileID: 0}
     - target: {fileID: 8048867451119059524, guid: a539cef262eb9a44d98a5942546750d7, type: 3}
       propertyPath: Sit
       value: 

@@ -9,6 +9,7 @@ TagManager:
   - DragArea
   - HitMe
   - Cat
+  - CatEvent
   layers:
   - Default
   - TransparentFX
