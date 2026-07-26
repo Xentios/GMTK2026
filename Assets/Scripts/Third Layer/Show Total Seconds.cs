@@ -18,7 +18,7 @@ public class ShowTotalSeconds : MonoBehaviour
         if (GeneralTimer.instance == null) return;
 
         var totalSeconds = GeneralTimer.instance.GetRemaningTime().TotalSeconds;
-        secondsTextField.text = totalSeconds.ToString("F5");
+        secondsTextField.text = totalSeconds.ToString("F3");
 
         if (totalSeconds < threshHold)
         {

@@ -18,6 +18,7 @@ public class SumitPopUpAnimation : MonoBehaviour
 
     void OnDisable()
     {
+        transform.DOKill();
         transform.localScale = Vector3.zero;
     }
 }
