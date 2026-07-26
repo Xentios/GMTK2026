@@ -30,11 +30,11 @@ public class TeamMemberSpawner : MonoBehaviour
 
         while (true)
         {
-            spawnIntervalModifier = 1f;
+            if (GameManager.instance != null) spawnIntervalModifier = 1f;
 
             if (GameManager.instance != null && GameManager.instance.DemotivationFiller < 0.1f)
             {
-                spawnIntervalModifier = 0.2f;
+                spawnIntervalModifier = 0.4f;
             }
 
             yield return new WaitForSeconds(spawnInterval * spawnIntervalModifier);

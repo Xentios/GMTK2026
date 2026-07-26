@@ -14,6 +14,12 @@ public class PawSwawner : MonoBehaviour
 
     public DragManager dragManager;
 
+    private AudioSource audioSource;
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void PawnSpawn()
     {
         spriteRenderer.sprite = pawns[Random.Range(0, pawns.Count)];
@@ -23,6 +29,8 @@ public class PawSwawner : MonoBehaviour
         target.z = 0;
         Vector3 dir = pawHolder.transform.position - target;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        // AudioManager.instance.PlaySFX("PawEventSound");
+        audioSource.Play();
         pawHolder.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 90));
         pawHolder.transform.DOMove(target, 0.4f).OnComplete(CleanUp);
 
