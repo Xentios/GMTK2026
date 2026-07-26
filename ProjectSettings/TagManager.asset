@@ -8,6 +8,11 @@ TagManager:
   - Ground
   - DragArea
   - HitMe
+  - Cat
+  - CatEvent
+  - Keyboard
+  - Syrup
+  - Tab
   layers:
   - Default
   - TransparentFX
