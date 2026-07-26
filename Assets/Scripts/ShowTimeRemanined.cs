@@ -32,6 +32,8 @@ public class ShowTimeRemanined : MonoBehaviour
 
     private void ChangeALlValues()
     {
+        if (GeneralTimer.instance == null) return;
+
         ChangeValue(GeneralTimer.instance.GetRemaningTime().Days, days);
         ChangeValue(GeneralTimer.instance.GetRemaningTime().Hours, hours);
         ChangeValue(GeneralTimer.instance.GetRemaningTime().Minutes, minutes);
